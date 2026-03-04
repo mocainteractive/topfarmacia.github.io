@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisi Reputazione Digitale — Top Farmacia 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#E52217;--white:#FFFFFF;--gray-light:#F4F5F6;--gray-dark:#191919;
+  --green:#118541;--blue:#5781FF;--violet:#551FC4;--pink:#CE2A59;--orange:#DB5E29;
+  --gray-text:#595959;--gray-chart:#484848;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',sans-serif;font-size:14px;color:var(--gray-text);background:#fff;line-height:1.6}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--gray-dark);padding:0 40px;display:flex;align-items:center;gap:0;border-bottom:3px solid var(--red)}
+nav a{color:#ccc;text-decoration:none;font-size:12px;font-weight:500;text-transform:uppercase;padding:14px 16px;display:block;letter-spacing:.04em;transition:color .2s,background .2s}
+nav a:hover,nav a.active{color:#fff;background:rgba(255,255,255,.08)}
+nav .nav-brand{margin-right:auto;color:#fff;font-weight:700;font-size:13px;letter-spacing:.05em;padding:14px 0}
+
+/* LAYOUT */
+section{padding:40px 80px;max-width:1280px;margin:0 auto}
+section.full-width{max-width:none;padding:0}
+.section-bg{background:var(--gray-light)}
+
+/* COVER */
+.cover{background:var(--gray-dark);color:#fff;padding:80px;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.cover::before{content:'';position:absolute;top:0;right:0;width:320px;height:100%;background:var(--red);opacity:.12;clip-path:polygon(60px 0,100% 0,100% 100%,0 100%)}
+.cover-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:rgba(255,255,255,.5);margin-bottom:12px}
+.cover h1{font-size:48px;font-weight:700;text-transform:uppercase;line-height:1.1;color:#fff;margin-bottom:8px}
+.cover h1 span{color:var(--red)}
+.cover-date{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:32px}
+.cover-tags{display:flex;flex-wrap:wrap;gap:8px}
+.cover-tag{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);padding:6px 14px;border-radius:4px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+.cover-logo{position:absolute;top:40px;right:80px;opacity:.9}
+
+/* HEADINGS */
+.section-title{font-size:24px;font-weight:500;text-transform:uppercase;color:var(--gray-dark);margin-bottom:8px;letter-spacing:.02em}
+.section-subtitle{font-size:13px;color:var(--gray-text);margin-bottom:40px;max-width:720px}
+.label-bold{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-text);margin-bottom:16px}
+
+/* SENTIMENT BADGE */
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.badge-green{background:#E8F5EE;color:var(--green)}
+.badge-orange{background:#FDF2EC;color:var(--orange)}
+.badge-red{background:#FEE8E7;color:var(--red)}
+.badge-gray{background:#EBEBEB;color:var(--gray-chart)}
+.badge::before{content:'●';font-size:8px}
+
+/* EXEC SUMMARY */
+.exec-box{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:32px 40px;margin-bottom:32px}
+.exec-box p{font-size:14px;color:var(--gray-text);line-height:1.8}
+.exec-box strong{color:var(--gray-dark)}
+.t3-desc p{font-size:13px;line-height:1.7;color:var(--gray-text)}
+
+/* KPI GRID */
+.kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:48px}
+.kpi-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:24px;text-align:center}
+.kpi-card .kpi-val{font-size:36px;font-weight:700;color:var(--gray-dark);line-height:1}
+.kpi-card .kpi-val.red{color:var(--red)}
+.kpi-card .kpi-val.green{color:var(--green)}
+.kpi-card .kpi-val.blue{color:var(--blue)}
+.kpi-card .kpi-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-top:8px}
+.kpi-card .kpi-sub{font-size:11px;color:#aaa;margin-top:4px}
+
+/* RATING CARDS */
+.rating-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
+.rating-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:24px}
+.rating-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.rating-card-name{font-size:13px;font-weight:700;text-transform:uppercase;color:var(--gray-dark);letter-spacing:.05em}
+.big-rating{font-size:40px;font-weight:700;color:var(--gray-dark);line-height:1}
+.stars{color:#F5A623;font-size:14px;margin-top:4px}
+.bar-row{margin-bottom:6px}
+.bar-row .bar-label{display:flex;justify-content:space-between;font-size:11px;color:var(--gray-text);margin-bottom:3px}
+.bar-track{background:#F0F0F0;border-radius:2px;height:6px;width:100%}
+.bar-fill{height:6px;border-radius:2px}
+.bar-fill-5{background:var(--green);width:84.8%}
+.bar-fill-4{background:#6CC17A;width:10.4%}
+.bar-fill-3{background:#FFC34A;width:2.1%}
+.bar-fill-2{background:#FF9A5C;width:1.2%}
+.bar-fill-1{background:var(--red);width:1.5%}
+.bar-fill-g5{background:var(--green);width:82.9%}
+.bar-fill-g4{background:#6CC17A;width:9.3%}
+.bar-fill-g1{background:var(--red);width:0.1%}
+.bar-fill-t5{background:var(--green);width:74.9%}
+.bar-fill-t4{background:#6CC17A;width:9.3%}
+.bar-fill-t3{background:#FFC34A;width:3.5%}
+.bar-fill-t2{background:#FF9A5C;width:2.5%}
+.bar-fill-t1{background:var(--red);width:9.9%}
+
+/* AEO */
+.aeo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
+.aeo-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:24px;border-top:3px solid var(--blue)}
+.aeo-engine{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:12px}
+.aeo-score-big{font-size:52px;font-weight:700;color:var(--gray-dark);line-height:1}
+.aeo-score-big span{font-size:20px;color:#aaa}
+.aeo-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.aeo-mini{text-align:center}
+.aeo-mini-val{font-size:22px;font-weight:700;color:var(--gray-dark)}
+.aeo-mini-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#aaa;margin-top:2px}
+
+/* TOP 3 GRIDS */
+.t3-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
+.t3-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:24px;border-left:4px solid transparent}
+.t3-card.forza{border-left-color:var(--green)}
+.t3-card.debol{border-left-color:var(--red)}
+.t3-card.opp{border-left-color:var(--blue)}
+.t3-num{font-size:40px;font-weight:700;color:#F0F0F0;line-height:1;margin-bottom:12px}
+.t3-title{font-size:14px;font-weight:700;color:var(--gray-dark);margin-bottom:8px}
+.t3-desc{font-size:12px;color:var(--gray-text);line-height:1.6}
+
+/* RACCOMANDAZIONE */
+.raccomandazione{background:var(--gray-dark);color:#fff;border-radius:8px;padding:40px;margin-bottom:48px;border-left:5px solid var(--red)}
+.raccomandazione h3{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin-bottom:16px}
+.raccomandazione p{font-size:14px;color:rgba(255,255,255,.85);line-height:1.8}
+.raccomandazione strong{color:#fff}
+
+/* SENTIMENT MAP */
+.sentiment-map{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:32px;margin-bottom:48px}
+.sentiment-map h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-dark);margin-bottom:24px}
+.sm-row{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.sm-source{font-size:12px;font-weight:600;color:var(--gray-dark);width:200px;flex-shrink:0}
+.sm-bars{flex:1;display:flex;gap:3px;height:22px}
+.sm-bar-pos{background:var(--green);border-radius:2px 0 0 2px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff}
+.sm-bar-neu{background:#FFC34A;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff}
+.sm-bar-neg{background:var(--red);border-radius:0 2px 2px 0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff}
+.sm-legend{display:flex;gap:20px;margin-top:20px}
+.sm-leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--gray-text)}
+.sm-leg-dot{width:10px;height:10px;border-radius:2px}
+
+/* FONTE TABS */
+.tabs-nav{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:32px}
+.tab-btn{background:#fff;border:1px solid #E5E7EA;border-radius:4px;padding:8px 16px;font-family:'Figtree',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--gray-text);cursor:pointer;transition:all .2s}
+.tab-btn:hover{border-color:var(--red);color:var(--red)}
+.tab-btn.active{background:var(--red);border-color:var(--red);color:#fff}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* FONTE CARD */
+.fonte-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;overflow:hidden;margin-bottom:8px}
+.fonte-header{padding:24px 32px;background:var(--gray-light);border-bottom:1px solid #E5E7EA;display:flex;align-items:center;justify-content:space-between;border-left:5px solid transparent}
+.fonte-header h2{font-size:20px;font-weight:700;text-transform:uppercase;color:var(--gray-dark);letter-spacing:.02em}
+.fonte-header .fonte-tipo{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-top:4px}
+.fonte-body{padding:32px}
+
+.fonte-kpi-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.fkpi{background:var(--gray-light);border-radius:6px;padding:16px 20px;text-align:center;min-width:120px}
+.fkpi-val{font-size:28px;font-weight:700;color:var(--gray-dark);line-height:1}
+.fkpi-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--gray-text);margin-top:4px}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.col-box{background:var(--gray-light);border-radius:6px;padding:20px 24px}
+.col-box h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+.col-box.green h4{color:var(--green)}
+.col-box.red h4{color:var(--red)}
+.col-box ul{list-style:none;padding:0}
+.col-box ul li{font-size:12px;color:var(--gray-text);padding:6px 0;border-bottom:1px solid rgba(0,0,0,.06);padding-left:14px;position:relative;line-height:1.5}
+.col-box ul li::before{content:'●';position:absolute;left:0;font-size:8px;top:9px;color:inherit}
+.col-box.green ul li::before{color:var(--green)}
+.col-box.red ul li::before{color:var(--red)}
+.col-box ul li:last-child{border-bottom:none}
+
+.opp-list{margin-bottom:24px}
+.opp-list h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:12px}
+.opp-list ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px}
+.opp-list ul li{font-size:12px;color:var(--gray-text);padding:10px 14px;background:#EEF2FF;border-radius:4px;border-left:3px solid var(--blue);line-height:1.5}
+
+.kw-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.kw-tag{background:var(--gray-light);border:1px solid #E0E0E0;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:600;color:var(--gray-text)}
+
+.note-box{background:#FFFBF0;border:1px solid #F5E6B0;border-radius:6px;padding:20px 24px;margin-bottom:8px}
+.note-box h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#966A00;margin-bottom:10px}
+.note-box p{font-size:12px;color:var(--gray-text);line-height:1.7}
+.note-box strong{color:var(--gray-dark)}
+
+.temi-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.tema-tag{background:#fff;border:1px solid #D0D5DC;border-radius:4px;padding:5px 12px;font-size:11px;font-weight:600;color:var(--gray-dark)}
+
+/* FOOTER */
+footer{background:var(--gray-dark);padding:32px 80px;display:flex;align-items:center;justify-content:space-between}
+footer p{font-size:11px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.06em}
+
+/* MARKET CONTEXT */
+.mkt-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+.mkt-kpi{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:20px 24px;border-top:3px solid var(--red)}
+.mkt-kpi-val{font-size:32px;font-weight:700;color:var(--gray-dark);line-height:1}
+.mkt-kpi-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-top:6px}
+.mkt-kpi-trend{font-size:12px;font-weight:700;color:var(--green);margin-top:4px}
+.mkt-kpi-sub{font-size:11px;color:#aaa;margin-top:2px}
+
+.segment-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+.segment-card{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:24px}
+.segment-card h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-bottom:16px}
+.seg-bar-row{margin-bottom:10px}
+.seg-bar-label{display:flex;justify-content:space-between;font-size:12px;color:var(--gray-text);margin-bottom:4px}
+.seg-bar-label strong{color:var(--gray-dark)}
+.seg-bar-track{background:#F0F0F0;border-radius:3px;height:8px}
+.seg-bar-fill{height:8px;border-radius:3px;background:var(--red)}
+.seg-bar-fill-gray{height:8px;border-radius:3px;background:#BDBDBD}
+
+.competitor-table-wrap{background:#fff;border:1px solid #E5E7EA;border-radius:8px;overflow:hidden;margin-bottom:32px}
+.competitor-table-wrap table{width:100%;border-collapse:collapse;font-size:12px}
+.competitor-table-wrap thead tr{background:var(--gray-dark);color:#fff}
+.competitor-table-wrap thead th{padding:10px 16px;text-align:left;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.competitor-table-wrap tbody tr{border-bottom:1px solid #F0F0F0;transition:background .15s}
+.competitor-table-wrap tbody tr:hover{background:var(--gray-light)}
+.competitor-table-wrap tbody td{padding:10px 16px;color:var(--gray-text)}
+.competitor-table-wrap tbody td:first-child{font-weight:700;color:var(--gray-dark)}
+.rank-dot{background:var(--red);color:#fff;font-size:10px;font-weight:700;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.rank-dot-gray{background:#E0E0E0;color:var(--gray-dark)}
+.topfarm-row td{background:#FFF8F8!important;color:var(--gray-dark)!important}
+.topfarm-row td:first-child{color:var(--red)!important}
+.visit-bar-inline{background:#F0F0F0;border-radius:3px;height:5px;margin-top:3px;overflow:hidden}
+.visit-bar-fill{height:5px;border-radius:3px;background:var(--red)}
+.visit-bar-fill-gray{height:5px;border-radius:3px;background:#BDBDBD}
+
+.insight-mkt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.insight-mkt{background:#fff;border:1px solid #E5E7EA;border-radius:8px;padding:20px 24px;border-left:4px solid var(--blue)}
+.insight-mkt-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:8px}
+.insight-mkt h4{font-size:13px;font-weight:700;color:var(--gray-dark);margin-bottom:8px}
+.insight-mkt p{font-size:12px;color:var(--gray-text);line-height:1.6}
+
+/* REDDIT ENRICHED */
+.reddit-kpi-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.reddit-kpi{background:var(--gray-light);border-radius:6px;padding:14px 18px;text-align:center;min-width:110px}
+.reddit-kpi-val{font-size:24px;font-weight:700;color:var(--gray-dark);line-height:1}
+.reddit-kpi-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--gray-text);margin-top:4px}
+
+.reddit-temi-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.reddit-tema{background:#fff;border:1px solid #E5E7EA;border-radius:6px;padding:16px 20px;border-top:3px solid #F0F0F0;transition:border-color .2s}
+.reddit-tema:hover{border-top-color:var(--red)}
+.reddit-tema-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.reddit-tema-title{font-size:12px;font-weight:700;color:var(--gray-dark);text-transform:uppercase;letter-spacing:.04em}
+.reddit-tema-freq-track{background:#F0F0F0;border-radius:2px;height:4px;margin-bottom:6px}
+.reddit-tema-freq-fill{height:4px;border-radius:2px;background:var(--red)}
+.reddit-tema-freq-label{font-size:10px;color:#aaa;margin-bottom:10px}
+.reddit-tema-quote{background:var(--gray-light);border-left:2px solid var(--red);padding:8px 12px;font-size:11px;font-style:italic;color:var(--gray-text);margin-bottom:8px;border-radius:0 2px 2px 0}
+.reddit-tema-quote a{color:var(--red);text-decoration:none;font-size:10px;font-style:normal;font-weight:600}
+.reddit-tema-insight{font-size:11px;color:var(--gray-text);line-height:1.5;padding-top:8px;border-top:1px solid #F0F0F0}
+
+.reddit-brand-table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:24px}
+.reddit-brand-table th{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);text-align:left;padding:8px 12px;border-bottom:2px solid #F0F0F0}
+.reddit-brand-table td{padding:12px;font-size:11px;border-bottom:1px solid #F0F0F0;color:var(--gray-text)}
+.reddit-brand-table tr:hover td{background:#FAFAFA}
+.reddit-brand-table .brand-cell{font-weight:700;color:var(--gray-dark);font-size:12px}
+.reddit-brand-table .mentions-cell{font-weight:700;color:var(--red);font-size:14px}
+.rbbrandbar{background:#F0F0F0;height:5px;border-radius:2px;overflow:hidden;margin-top:3px}
+.rbbrandbar-fill{height:5px;border-radius:2px}
+
+.reddit-faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.reddit-faq{background:#fff;border:1px solid #E5E7EA;border-radius:6px;padding:14px 18px;border-left:3px solid transparent;transition:border-color .2s}
+.reddit-faq:hover{border-left-color:var(--red)}
+.reddit-faq-q{font-size:12px;font-weight:700;color:var(--gray-dark);margin-bottom:6px;display:flex;align-items:flex-start;gap:8px}
+.reddit-faq-icon{width:18px;height:18px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.reddit-faq-icon svg{width:9px;height:9px}
+.reddit-faq-freq{font-size:10px;color:#aaa;margin-bottom:6px}
+.reddit-faq-link{font-size:10px;color:var(--red);text-decoration:none;font-weight:600}
+
+.reddit-opp-list{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.reddit-opp{background:#fff;border:1px solid #E5E7EA;border-radius:6px;padding:16px 20px;display:grid;grid-template-columns:90px 1fr 1fr;gap:16px;align-items:start}
+.reddit-opp-priority{display:flex;flex-direction:column;align-items:center;gap:6px}
+.rp-badge{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:2px}
+.rp-alta{background:var(--red);color:#fff}
+.rp-media{background:#FF8880;color:#fff}
+.rp-bassa{background:var(--gray-light);color:var(--gray-text)}
+.reddit-opp-link{font-size:10px;color:var(--red);text-decoration:none;font-weight:600}
+.reddit-opp-link:hover{text-decoration:underline}
+.reddit-opp-type{display:inline-block;font-size:9px;font-weight:700;padding:2px 8px;background:var(--gray-light);color:var(--gray-text);text-transform:uppercase;letter-spacing:.08em;border-radius:2px;margin-bottom:6px}
+.reddit-opp-detail h4{font-size:11px;font-weight:700;color:var(--gray-dark);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px}
+.reddit-opp-detail p{font-size:11px;color:var(--gray-text);line-height:1.5}
+.reddit-opp-response{background:var(--gray-light);border-left:2px solid var(--red);padding:10px 12px;font-size:11px;font-style:italic;color:var(--gray-text);border-radius:0 2px 2px 0}
+.reddit-opp-response-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-text);margin-bottom:6px}
+
+.reddit-insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.reddit-insight{background:var(--gray-light);border-radius:6px;padding:16px 20px}
+.reddit-insight-num{font-size:28px;font-weight:700;color:#E0E0E0;line-height:1;margin-bottom:6px}
+.reddit-insight-title{font-size:12px;font-weight:700;color:var(--gray-dark);margin-bottom:6px}
+.reddit-insight-body{font-size:11px;color:var(--gray-text);line-height:1.5;margin-bottom:10px}
+.reddit-insight-rec{background:#fff;border-radius:4px;padding:8px 12px;font-size:11px;color:var(--gray-text);border-left:3px solid var(--blue)}
+.reddit-insight-rec-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:4px}
+.reddit-wc{display:flex;flex-wrap:wrap;gap:6px;padding:12px 0;margin-bottom:24px}
+
+/* PRINT */
+@media print{
+  nav{display:none}
+  .tab-content{display:block!important}
+  .tabs-nav{display:none}
+  section{page-break-inside:avoid;padding:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">TOP FARMACIA</span>
+  <a href="#executive">Executive Summary</a>
+  <a href="#mercato">Mercato</a>
+  <a href="#kpi">KPI</a>
+  <a href="#forza-debolezza">Forza & Debolezza</a>
+  <a href="#opportunita">Opportunità</a>
+  <a href="#raccomandazione">Strategia</a>
+  <a href="#analisi-fonti">Analisi per Fonte</a>
+</nav>
+
+<!-- COVER -->
+<div class="cover full-width">
+  <img style="position:absolute;top:40px;left:80px;opacity:.9" src="https://mocainteractive.com/assets/svg/logo-light.svg" alt="moca" height="28">
+  <img style="position:absolute;top:36px;right:80px;opacity:.9;filter:brightness(0) invert(1)" src="https://www.topfarmacia.it/icons/LogoTopFarmaciaOnline.svg" alt="Top Farmacia" height="40">
+  <div class="cover-label">Analisi Reputazione Digitale</div>
+  <h1>TOP <span>FARMACIA</span></h1>
+  <div class="cover-date">25 Febbraio 2026 &nbsp;·&nbsp; 8 fonti analizzate &nbsp;·&nbsp; 15.110+ recensioni/menzioni &nbsp;·&nbsp; Contesto di mercato incluso</div>
+  <div class="cover-tags">
+    <span class="cover-tag">Feedaty</span>
+    <span class="cover-tag">Google Maps</span>
+    <span class="cover-tag">Trustpilot</span>
+    <span class="cover-tag">AEO Audit</span>
+    <span class="cover-tag">GEO Audit</span>
+    <span class="cover-tag">Web Sources</span>
+    <span class="cover-tag">Reddit</span>
+    <span class="cover-tag">Facebook Reviews</span>
+    <span class="cover-tag">Market Research</span>
+    <span class="cover-tag">Reddit Social Listening</span>
+  </div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div id="executive" class="section-bg">
+<section>
+  <div class="section-title">Executive Summary</div>
+  <div class="section-subtitle">Sintesi cross-fonte dell'intera analisi della reputazione digitale</div>
+
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+    <span class="badge badge-green">Positivo</span>
+    <span style="font-size:13px;color:var(--gray-text)">Sentiment dominante su tutte le 8 fonti analizzate</span>
+    <span style="margin-left:auto;font-size:28px;font-weight:700;color:var(--gray-dark)">4.6 <span style="font-size:14px;color:#aaa;font-weight:400">/ 5 rating medio ponderato</span></span>
+  </div>
+
+  <div class="exec-box">
+    <p><strong>Top Farmacia gode di una reputazione digitale complessivamente molto positiva</strong> su tutte le piattaforme presidiate, con oltre 14.300 recensioni e menzioni analizzate e un rating medio ponderato superiore a 4.5. I tre pilastri della soddisfazione dei clienti — <strong style="color:var(--red)">prezzi competitivi, velocità di consegna e ampia gamma di prodotti</strong> — emergono in modo trasversale da tutte le fonti quantitative: Feedaty 4.8/5, Google Maps 4.6/5, Trustpilot 4.4/5.</p>
+    <p style="margin-top:16px">Il brand occupa la <strong>#7 posizione nel mercato italiano per traffico organico</strong> (443K visite/mese), in un settore in forte espansione (+15.3% globale nel 2024) dove gli integratori rappresentano il 53% del mercato e-pharma e gli OTC crescono del +21% YoY. Il contesto competitivo è favorevole: la quota online sull'OTC in Italia passerà dal 18.3% del 2024 al 24.5% nel 2026, con target 29.4% nel 2029.</p>
+    <p style="margin-top:16px">Tuttavia due criticità strutturali minano la coerenza dell'esperienza: la <strong>irraggiungibilità del servizio clienti</strong> — citata nel 65% delle recensioni negative Trustpilot, nelle top critiche Google Maps e come pain point primario nelle fonti web — e la <strong>discontinuità logistica</strong> con i corrieri terzi, in particolare GLS. Entrambe le criticità non riguardano la qualità intrinseca del servizio, il che rende le leve correttive accessibili senza stravolgere il modello.</p>
+    <p style="margin-top:16px">Sul fronte della visibilità AI, il brand presenta un <strong>AEO score medio di 61/100</strong> con forte variabilità tra engine (Gemini 80 vs Perplexity 42) e una share of voice strutturalmente bassa (2/10 su ChatGPT, 1/10 su Perplexity). Il gap indica che la visibilità dipende quasi interamente dall'indicizzazione Google e va estesa agli altri engine attraverso contenuti indicizzabili autonomamente dagli LLM.</p>
+    <p style="margin-top:16px">La completa assenza su Reddit — dove <strong>nessun competitor italiano diretto è strutturalmente presente</strong> — rappresenta un'opportunità strategica di primo entrante in un territorio completamente libero, con conversazioni attive su temi dove Top Farmacia ha tutti gli asset per primeggiare: affidabilità certificata, autorizzazione ministeriale, integratori di qualità farmaceutica.</p>
+  </div>
+</section>
+</div>
+
+<!-- CONTESTO DI MERCATO -->
+<div id="mercato">
+<section>
+  <div class="section-title">Contesto di Mercato</div>
+  <div class="section-subtitle">Il settore delle farmacie online in Italia e nel mondo — dati Statista · Pharmacy Scanner · Semrush · IQVIA · Febbraio 2026</div>
+
+  <div class="label-bold" style="margin-bottom:16px">Key Metrics Globali & Italia</div>
+  <div class="mkt-kpi-grid">
+    <div class="mkt-kpi">
+      <div class="mkt-kpi-val">$82B</div>
+      <div class="mkt-kpi-label">Revenue Globale 2024</div>
+      <div class="mkt-kpi-trend">▲ +15.3% vs 2023</div>
+      <div class="mkt-kpi-sub">Proiezione 2026: $109B</div>
+    </div>
+    <div class="mkt-kpi">
+      <div class="mkt-kpi-val">€10.5B</div>
+      <div class="mkt-kpi-label">Revenue EU-27 2024</div>
+      <div class="mkt-kpi-trend">▲ +18.2% vs 2023</div>
+      <div class="mkt-kpi-sub">Target 2029: €18.7B (+77%)</div>
+    </div>
+    <div class="mkt-kpi">
+      <div class="mkt-kpi-val">24.5%</div>
+      <div class="mkt-kpi-label">Online Share OTC Italia 2026</div>
+      <div class="mkt-kpi-trend">▲ +6.1pp vs 2024</div>
+      <div class="mkt-kpi-sub">Target 2029: 29.4%</div>
+    </div>
+    <div class="mkt-kpi">
+      <div class="mkt-kpi-val">~9.6%</div>
+      <div class="mkt-kpi-label">CAGR Mondiale</div>
+      <div class="mkt-kpi-trend">▲ Crescita stabile</div>
+      <div class="mkt-kpi-sub">Tasso crescita annuo composto</div>
+    </div>
+  </div>
+
+  <div class="segment-grid">
+    <div class="segment-card">
+      <h4>Mercato Italiano per Segmento — H1 2025 vs H1 2024</h4>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Integratori</span><strong style="color:var(--green)">€307M (+15%)</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:100%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Personal Care</span><strong>€172M (+5%)</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:56%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>OTC Drugs</span><strong style="color:var(--green)">€58M (+21%)</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:19%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Patient Care</span><strong>€20M (+6%)</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:7%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Food Products</span><strong>€16M (~0%)</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill-gray" style="width:5%"></div></div>
+      </div>
+      <div style="background:#E8F5EE;border-radius:4px;padding:10px 14px;margin-top:14px;font-size:12px;color:var(--green);font-weight:600">Integratori = 53% del mercato e-pharma italiano. OTC: crescita più alta (+21% YoY).</div>
+    </div>
+
+    <div class="segment-card">
+      <h4>Driver d'Acquisto (dati europei — proxy mercato italiano)</h4>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Prezzo competitivo</span><strong style="color:var(--red)">43%</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:100%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Praticità d'acquisto</span><strong>36%</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:84%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Velocità di consegna</span><strong>36%</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:84%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Consegna a domicilio</span><strong>28%</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill" style="width:65%"></div></div>
+      </div>
+      <div class="seg-bar-row">
+        <div class="seg-bar-label"><span>Servizio clienti</span><strong>12%</strong></div>
+        <div class="seg-bar-track"><div class="seg-bar-fill-gray" style="width:28%"></div></div>
+      </div>
+      <div style="background:#EEF2FF;border-radius:4px;padding:10px 14px;margin-top:14px;font-size:12px;color:var(--blue);font-weight:600">Il 37% degli e-shopper europei acquista farmaci online <strong>almeno 1 volta al mese</strong> — opportunità retention enorme.</div>
+    </div>
+  </div>
+
+  <div class="label-bold" style="margin-bottom:16px">Top Farmacie Online Italia — Visitatori Unici (Agosto 2025)</div>
+  <div class="competitor-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Farmacia</th>
+          <th>Visitatori Unici / Mese</th>
+          <th>Quota Traffico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="rank-dot">1</span></td>
+          <td><strong>Redcare</strong></td>
+          <td>1.345.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill" style="width:100%"></div></div><span style="font-size:11px;color:#aaa">20.5%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot">2</span></td>
+          <td><strong>Dr Max</strong></td>
+          <td>1.055.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill" style="width:78%"></div></div><span style="font-size:11px;color:#aaa">16.1%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot">3</span></td>
+          <td>Farmacia Loreto</td>
+          <td>868.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill" style="width:65%"></div></div><span style="font-size:11px;color:#aaa">13.2%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">4</span></td>
+          <td>Atida eFarma</td>
+          <td>744.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:55%"></div></div><span style="font-size:11px;color:#aaa">11.3%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">5</span></td>
+          <td>Farmasave</td>
+          <td>659.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:49%"></div></div><span style="font-size:11px;color:#aaa">10%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">6</span></td>
+          <td>TuttoFarma</td>
+          <td>528.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:39%"></div></div><span style="font-size:11px;color:#aaa">8%</span></td>
+        </tr>
+        <tr class="topfarm-row">
+          <td><span class="rank-dot rank-dot-gray" style="background:var(--red);color:#fff">7</span></td>
+          <td><strong style="color:var(--red)">Top Farmacia ←</strong></td>
+          <td><strong>443.000</strong></td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill" style="width:33%"></div></div><span style="font-size:11px;font-weight:700;color:var(--red)">6.7%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">8</span></td>
+          <td>1000 Farmacie</td>
+          <td>435.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:32%"></div></div><span style="font-size:11px;color:#aaa">6.6%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">9</span></td>
+          <td>Antica Farmacia Orlandi</td>
+          <td>343.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:25%"></div></div><span style="font-size:11px;color:#aaa">5.2%</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-dot rank-dot-gray">10</span></td>
+          <td>Farmacia Soccavo</td>
+          <td>318.000</td>
+          <td><div class="visit-bar-inline"><div class="visit-bar-fill-gray" style="width:24%"></div></div><span style="font-size:11px;color:#aaa">4.8%</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:#aaa;margin-bottom:32px">Fonte: Semrush / Casaleggio Associati · Agosto 2025. I top 3 player (Redcare, Dr Max, Farmacia Loreto) raccolgono il 50% del traffico organico.</p>
+
+  <div class="label-bold" style="margin-bottom:16px">Trend di Settore Rilevanti per Top Farmacia</div>
+  <div class="insight-mkt-grid">
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #1</div>
+      <h4>Integratori trainano il mercato</h4>
+      <p>Con €307M nell'H1 2025 (+15% YoY), gli integratori rappresentano il 53% dell'e-commerce farmaceutico italiano. I consumatori cercano comodità e prezzi migliori rispetto alla farmacia fisica — allineato con i punti di forza di Top Farmacia.</p>
+    </div>
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #2</div>
+      <h4>OTC: la categoria con più crescita</h4>
+      <p>I farmaci da banco online crescono del +21% in un anno. La quota online sull'OTC totale in Italia passerà dal 18.3% del 2024 al 24.5% nel 2026, con target 29.4% nel 2029. Finestra di opportunità strutturale da presidiare.</p>
+    </div>
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #3</div>
+      <h4>Il prezzo è il driver #1 ma la fiducia è il moltiplicatore</h4>
+      <p>Il 43% degli acquirenti online cita il prezzo come fattore principale. Tuttavia dopo il caso Talea Group (truffe diffuse), la fiducia è diventata discriminante. Top Farmacia ha entrambe le leve: prezzi + certificazione ministeriale.</p>
+    </div>
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #4</div>
+      <h4>Frequenza mensile: opportunità retention</h4>
+      <p>Il 37% degli e-shopper europei acquista prodotti medicinali online almeno una volta al mese. Questa frequenza indica un'enorme opportunità su subscription model e loyalty program per prodotti a consumo continuativo.</p>
+    </div>
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #5</div>
+      <h4>Top 3 concentrano il 50% del traffico</h4>
+      <p>Redcare (#1, 1.3M visite), Dr Max e Farmacia Loreto dominano per budget marketing. Top Farmacia è #7 con 443K visite. Il gap è recuperabile con specializzazione, contenuti educativi e presidio dei canali dove i top player sono assenti (es. Reddit).</p>
+    </div>
+    <div class="insight-mkt">
+      <div class="insight-mkt-tag">Trend #6</div>
+      <h4>Opportunità di differenziazione locale</h4>
+      <p>I player esteri (Redcare = DocMorris) dominano sul budget, ma c'è spazio per specializzazione di nicchia e trust locale. La certificazione ministeriale, la presenza di farmacisti reali e i 15 anni di storia sono asset differenzianti difficilmente replicabili dai big esteri.</p>
+    </div>
+  </div>
+
+  <div class="note-box">
+    <h4>Fonte Dati Mercato</h4>
+    <p>Statista Market Insights (2026) · Pharmacy Scanner / IQVIA · Semrush / Casaleggio Associati · Statista EU-27 Online Pharmacy Report (Gennaio 2026) · Statista Italy OTC Sales Channels Forecast. I dati sui driver d'acquisto sono proxy europei (Spagna) applicati al contesto italiano.</p>
+  </div>
+</section>
+</div>
+
+<!-- KPI -->
+<div id="kpi">
+<section>
+  <div class="section-title">I Numeri Chiave</div>
+  <div class="section-subtitle">Dashboard aggregata dei KPI principali per fonte</div>
+
+  <div class="label-bold">Volume recensioni / menzioni per fonte</div>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-val green">11.645</div>
+      <div class="kpi-label">Feedaty</div>
+      <div class="kpi-sub">Recensioni verificate</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val blue">3.311</div>
+      <div class="kpi-label">Google Maps</div>
+      <div class="kpi-sub">2.210 con testo</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val" style="color:var(--violet)">5.946</div>
+      <div class="kpi-label">Trustpilot</div>
+      <div class="kpi-sub">Recensioni analizzate</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val red">0</div>
+      <div class="kpi-label">Reddit</div>
+      <div class="kpi-sub">Menzioni dirette brand</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-val" style="color:#1877F2">803</div>
+      <div class="kpi-label">Facebook Reviews</div>
+      <div class="kpi-sub">Sentiment analizzato</div>
+    </div>
+  </div>
+
+  <div class="label-bold">Rating per piattaforma di recensione</div>
+  <div class="rating-grid">
+    <!-- FEEDATY -->
+    <div class="rating-card">
+      <div class="rating-card-header">
+        <div>
+          <div class="rating-card-name">Feedaty</div>
+          <div style="font-size:11px;color:#aaa">11.645 recensioni</div>
+        </div>
+        <div style="text-align:right">
+          <div class="big-rating">4.8</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="bar-row"><div class="bar-label"><span>5★</span><span>84.8% (9.875)</span></div><div class="bar-track"><div class="bar-fill bar-fill-5"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>4★</span><span>10.4% (1.211)</span></div><div class="bar-track"><div class="bar-fill bar-fill-4"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>3★</span><span>2.1% (245)</span></div><div class="bar-track"><div class="bar-fill bar-fill-3"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>2★</span><span>1.2% (140)</span></div><div class="bar-track"><div class="bar-fill bar-fill-2"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>1★</span><span>1.5% (175)</span></div><div class="bar-track"><div class="bar-fill bar-fill-1"></div></div></div>
+    </div>
+    <!-- GOOGLE -->
+    <div class="rating-card">
+      <div class="rating-card-header">
+        <div>
+          <div class="rating-card-name">Google Maps</div>
+          <div style="font-size:11px;color:#aaa">3.311 recensioni</div>
+        </div>
+        <div style="text-align:right">
+          <div class="big-rating">4.6</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="bar-row"><div class="bar-label"><span>5★</span><span>82.9% (2.744)</span></div><div class="bar-track"><div class="bar-fill bar-fill-g5"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>4★</span><span>9.3% (308)</span></div><div class="bar-track"><div class="bar-fill bar-fill-g4"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>2-3★</span><span>~6% (96)</span></div><div class="bar-track"><div class="bar-fill" style="background:#FFC34A;width:6%"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>1★</span><span>0.1% (2)</span></div><div class="bar-track"><div class="bar-fill bar-fill-g1"></div></div></div>
+      <div style="margin-top:16px;font-size:11px;color:#aaa">Risposte brand: 113 su 3.311 <span style="color:var(--red);font-weight:600">(3.4%)</span></div>
+    </div>
+    <!-- TRUSTPILOT -->
+    <div class="rating-card">
+      <div class="rating-card-header">
+        <div>
+          <div class="rating-card-name">Trustpilot</div>
+          <div style="font-size:11px;color:#aaa">5.946 recensioni</div>
+        </div>
+        <div style="text-align:right">
+          <div class="big-rating">4.4</div>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <div class="bar-row"><div class="bar-label"><span>5★</span><span>74.9% (4.456)</span></div><div class="bar-track"><div class="bar-fill bar-fill-t5"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>4★</span><span>9.3% (551)</span></div><div class="bar-track"><div class="bar-fill bar-fill-t4"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>3★</span><span>3.5% (206)</span></div><div class="bar-track"><div class="bar-fill bar-fill-t3"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>2★</span><span>2.5% (146)</span></div><div class="bar-track"><div class="bar-fill bar-fill-t2"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span>1★</span><span>9.9% (587)</span></div><div class="bar-track"><div class="bar-fill bar-fill-t1"></div></div></div>
+    </div>
+  </div>
+
+  <div class="label-bold">AEO Score — Visibilità AI per engine</div>
+  <div class="aeo-grid">
+    <div class="aeo-card" style="border-top-color:#10a37f">
+      <div class="aeo-engine" style="color:#10a37f">OpenAI GPT</div>
+      <div class="aeo-score-big">61<span>/100</span></div>
+      <div class="aeo-mini-grid">
+        <div class="aeo-mini"><div class="aeo-mini-val">80</div><div class="aeo-mini-label">Sentiment</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--red)">2/10</div><div class="aeo-mini-label">Share of Voice</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--red)">2/10</div><div class="aeo-mini-label">Pos. Mercato</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val">5/10</div><div class="aeo-mini-label">Qualità Fonti</div></div>
+      </div>
+    </div>
+    <div class="aeo-card" style="border-top-color:#20808d">
+      <div class="aeo-engine" style="color:#20808d">Perplexity AI</div>
+      <div class="aeo-score-big" style="color:var(--orange)">42<span>/100</span></div>
+      <div class="aeo-mini-grid">
+        <div class="aeo-mini"><div class="aeo-mini-val">72</div><div class="aeo-mini-label">Sentiment</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--red)">1/10</div><div class="aeo-mini-label">Share of Voice</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--red)">1/10</div><div class="aeo-mini-label">Pos. Mercato</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val">—</div><div class="aeo-mini-label">Qualità Fonti</div></div>
+      </div>
+    </div>
+    <div class="aeo-card" style="border-top-color:#4285F4">
+      <div class="aeo-engine" style="color:#4285F4">Google Gemini</div>
+      <div class="aeo-score-big" style="color:var(--green)">80<span>/100</span></div>
+      <div class="aeo-mini-grid">
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--green)">Alto</div><div class="aeo-mini-label">Sentiment</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val" style="color:var(--green)">Migliore</div><div class="aeo-mini-label">dei 3 engine</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val">80</div><div class="aeo-mini-label">Score Totale</div></div>
+        <div class="aeo-mini"><div class="aeo-mini-val">Google</div><div class="aeo-mini-label">Index driven</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FORZA / DEBOLEZZA -->
+<div id="forza-debolezza" class="section-bg">
+<section>
+  <div class="section-title">Top 3 Punti di Forza</div>
+  <div class="section-subtitle">Emergono trasversalmente da tutte le fonti con recensioni dirette</div>
+  <div class="t3-grid" style="margin-bottom:48px">
+    <div class="t3-card forza">
+      <div class="t3-num">01</div>
+      <div class="t3-title">Prezzi competitivi e rapporto qualità-prezzo</div>
+      <div class="t3-desc">Citato in <strong>tutte le fonti</strong> con recensioni dirette: Feedaty 75%, Google Maps keyword #1 (<strong style="color:var(--red)">653 occorrenze</strong>), Trustpilot 85%. Driver primario di scelta e fidelizzazione.</div>
+    </div>
+    <div class="t3-card forza">
+      <div class="t3-num">02</div>
+      <div class="t3-title">Velocità e affidabilità delle consegne</div>
+      <div class="t3-desc">Feedaty <strong>80%</strong>, Trustpilot <strong>80%</strong>, Google Maps top keyword "veloce" (<strong style="color:var(--red)">453 occorrenze</strong>). Consegne frequenti in meno di 24-48 ore, confermate dagli AI engine.</div>
+    </div>
+    <div class="t3-card forza">
+      <div class="t3-num">03</div>
+      <div class="t3-title">Forte reputazione certificata multi-piattaforma</div>
+      <div class="t3-desc">Feedaty <strong>4.8/5</strong> su 5.050 rec. · Google Maps <strong>4.6/5</strong> su 3.311 rec. · Trustpilot <strong>4.4/5</strong> su 5.946 rec. Credenziali citate dagli AI engine come fonte di autorevolezza.</div>
+    </div>
+  </div>
+
+  <div class="section-title">Top 3 Punti di Debolezza</div>
+  <div class="section-subtitle">Criticità strutturali emerse in modo coerente su più fonti</div>
+  <div class="t3-grid">
+    <div class="t3-card debol">
+      <div class="t3-num">01</div>
+      <div class="t3-title">Irraggiungibilità del servizio clienti</div>
+      <div class="t3-desc">Trustpilot <strong style="color:var(--red)">65% rec. negative</strong> · Google Maps top criticità · Internet pain point primario (<strong>73% negativo</strong> quasi monofocale su questo tema). Nessuna risposta telefonica/email.</div>
+    </div>
+    <div class="t3-card debol">
+      <div class="t3-num">02</div>
+      <div class="t3-title">Discontinuità logistica con corrieri terzi</div>
+      <div class="t3-desc">GLS indicato come responsabile principale: Feedaty <strong style="color:var(--red)">60%</strong> dei problemi · Trustpilot <strong style="color:var(--red)">70% rec. negative</strong> · Google Maps con più segnalazioni di ritardi e smarrimenti.</div>
+    </div>
+    <div class="t3-card debol">
+      <div class="t3-num">03</div>
+      <div class="t3-title">Bassa visibilità nei motori AI</div>
+      <div class="t3-desc">AEO score medio <strong style="color:var(--red)">61/100</strong> · Share of voice <strong style="color:var(--red)">2/10</strong> su ChatGPT e <strong style="color:var(--red)">1/10</strong> su Perplexity · Posizione "Challenger" dominata da Redcare. <strong>0 menzioni</strong> su Reddit.</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- OPPORTUNITA -->
+<div id="opportunita">
+<section>
+  <div class="section-title">Top 3 Opportunità Strategiche</div>
+  <div class="section-subtitle">Aree di intervento prioritario con potenziale impatto reputazionale immediato</div>
+  <div class="t3-grid">
+    <div class="t3-card opp">
+      <div class="t3-num">01</div>
+      <div class="t3-title">Servizio clienti multicanale con SLA garantiti</div>
+      <div class="t3-desc">
+        <p style="margin-bottom:10px">Il 65% delle recensioni 1★ su Trustpilot e le criticità più frequenti su Google Maps hanno un'unica origine: l'irraggiungibilità del supporto nei momenti di eccezione (ritardi, prodotti mancanti, rimborsi). La qualità del prodotto e del servizio base non è in discussione — il problema è strutturale nella gestione dei casi anomali.</p>
+        <p style="margin-bottom:10px"><strong>Azioni prioritarie:</strong> Introduzione di chat live con farmacista disponibile in orari garantiti, numero verde dedicato post-acquisto, email con SLA di risposta pubblicato (<strong>max 24h lavorative</strong>). Implementazione di un sistema di escalation automatica per ordini in ritardo oltre soglia (es. 5 giorni lavorativi), con proactive outreach al cliente prima che pubblichi una recensione negativa.</p>
+        <p><strong>Impatto atteso:</strong> Riduzione delle recensioni 1★ stimata <strong style="color:var(--red)">-40/60%</strong> entro 6 mesi. Aumento del rating medio Trustpilot da 4.4 a 4.6+ con impatto diretto sul posizionamento nella SERP di Google. Il servizio clienti reattivo è l'unica leva capace di convertire esperienze negative in recensioni positive recuperate.</p>
+      </div>
+    </div>
+    <div class="t3-card opp">
+      <div class="t3-num">02</div>
+      <div class="t3-title">Strategia AEO/GEO strutturata</div>
+      <div class="t3-desc">
+        <p style="margin-bottom:10px">L'AEO score medio di 61/100 con gap Gemini 80 → ChatGPT 61 → Perplexity 42 rivela una visibilità AI quasi interamente dipendente dall'indicizzazione Google. Gli altri engine — con basi di conoscenza più ampie e meno legate al web crawling — non trovano fonti autorevoli e indipendenti che citino Top Farmacia in modo strutturato.</p>
+        <p style="margin-bottom:10px"><strong>Azioni prioritarie:</strong> Produzione di contenuti <em>LLM-friendly</em> — FAQ strutturate con schema markup FAQ/HowTo/Product, guide categoriali su integratori e OTC, pagina "Chi siamo" ottimizzata per entity recognition. Presenza su fonti citate dagli AI: Wikipedia (voce farmacia online Italia), Wikidata (entity brand), pubblicazioni settoriali (FOFI, Farmacista.it). Ottimizzazione del profilo Trustpilot e Feedaty per aumentare la qualità delle fonti citate (da 5/10 a 7+/10).</p>
+        <p><strong>Impatto atteso:</strong> Share of voice da <strong style="color:var(--red)">2/10</strong> a <strong style="color:var(--green)">5+/10</strong> su ChatGPT entro 12 mesi. AEO score Perplexity da 42 a 60+. Il settore farmaceutico è uno dei più interrogati dagli LLM: la posizione di autorità si costruisce adesso, prima che i competitor lo capiscano.</p>
+      </div>
+    </div>
+    <div class="t3-card opp">
+      <div class="t3-num">03</div>
+      <div class="t3-title">Presidio organico su Reddit</div>
+      <div class="t3-desc">
+        <p style="margin-bottom:10px">L'analisi Reddit rivela un canale ad alta fiducia (25-40 anni, utilizzatori abituali di integratori e OTC) dove <strong>0 competitor italiani diretti</strong> sono strutturalmente presenti. DrMax, eFarma, Farmacia Loreto, farmacia.it: tutti a 0 menzioni spontanee. La conversazione esiste e cresce — le domande su detrazioni fiscali, integratori affidabili, riconoscimento farmacie autorizzate sono attive e senza risposta qualificata.</p>
+        <p style="margin-bottom:10px"><strong>Azioni prioritarie:</strong> Apertura account brand trasparente (u/FarmacistTopFarmacia o simile) con disclosure esplicita. AMA mensile con farmacista del team su temi ad alta domanda (detrazioni fiscali, integratori per categorie, confronto normativo Italia vs acquisti esteri). Content pillar "Guida alle detrazioni farmaci online 2026" da distribuire nei subreddit r/ItaliaPersonalFinance e r/Salute. Risposta genuina e non promozionale nei thread già attivi.</p>
+        <p><strong>Impatto atteso:</strong> Posizionamento come <strong>voce di riferimento settoriale</strong> in un canale ad alto trust. Intercettazione della fascia 25-40 anni nelle fasi di considerazione. First mover advantage: la finestra di primo entrante è aperta ma ha un orizzonte temporale limitato. Avvio raccomandato entro <strong style="color:var(--red)">Q2 2026</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- RACCOMANDAZIONE -->
+<div id="raccomandazione" class="section-bg">
+<section>
+  <div class="section-title">Raccomandazione Strategica</div>
+  <div class="section-subtitle">Priorità di intervento basate sull'analisi cross-fonte</div>
+  <div class="raccomandazione">
+    <h3>▸ Priorità Strategica</h3>
+    <p>Le fondamenta reputazionali di Top Farmacia sono <strong>solide e trasversalmente confermate</strong>: prezzi, velocità e prodotti sono percepiti positivamente da decine di migliaia di clienti. La priorità strategica immediata è operativa: risolvere la contraddizione tra <strong>"servizio clienti" come punto di forza percepito</strong> (70% Feedaty, 65% Trustpilot) e come <strong style="color:#FF8A84">principale driver di insoddisfazione</strong> nei casi di eccezione. Un servizio clienti reattivo e multicanale trasformerebbe le recensioni 1★ — concentrate quasi esclusivamente su questo tema — in 5★, con impatto diretto sul rating medio su tutte le piattaforme. Parallelamente, un <strong>piano AEO sistematico</strong> aumenterebbe la share of voice nei motori AI dove oggi il brand è strutturalmente sottorappresentato rispetto al proprio peso reputazionale (Gemini 80 vs Perplexity 42: il gap indica che la visibilità dipende quasi interamente dall'indicizzazione Google e va estesa agli altri engine).</p>
+  </div>
+
+  <!-- SENTIMENT MAP -->
+  <div class="sentiment-map">
+    <h3>Mappa del Sentiment per Fonte</h3>
+    <div class="sm-row">
+      <div class="sm-source">Feedaty</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:95%">95%</div>
+        <div class="sm-bar-neu" style="width:2.1%"></div>
+        <div class="sm-bar-neg" style="width:2.9%">3%</div>
+      </div>
+    </div>
+    <div class="sm-row">
+      <div class="sm-source">Google Maps</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:92%">92%</div>
+        <div class="sm-bar-neu" style="width:2%"></div>
+        <div class="sm-bar-neg" style="width:6%">6%</div>
+      </div>
+    </div>
+    <div class="sm-row">
+      <div class="sm-source">Trustpilot</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:84%">84%</div>
+        <div class="sm-bar-neu" style="width:3.5%">3%</div>
+        <div class="sm-bar-neg" style="width:12.5%">12.5%</div>
+      </div>
+    </div>
+    <div class="sm-row">
+      <div class="sm-source">Internet / Web Sources</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:73%">73%</div>
+        <div class="sm-bar-neg" style="width:27%">27%</div>
+      </div>
+    </div>
+    <div class="sm-row">
+      <div class="sm-source">Reddit (settore)</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:28%">28%</div>
+        <div class="sm-bar-neu" style="width:55%">55% neutro</div>
+        <div class="sm-bar-neg" style="width:17%">17%</div>
+      </div>
+    </div>
+    <div class="sm-row">
+      <div class="sm-source">Facebook Reviews</div>
+      <div class="sm-bars">
+        <div class="sm-bar-pos" style="width:55%">55%</div>
+        <div class="sm-bar-neu" style="width:5%">5%</div>
+        <div class="sm-bar-neg" style="width:40%">40%</div>
+      </div>
+    </div>
+    <div class="sm-legend">
+      <div class="sm-leg-item"><div class="sm-leg-dot" style="background:var(--green)"></div> Positivo</div>
+      <div class="sm-leg-item"><div class="sm-leg-dot" style="background:#FFC34A"></div> Neutro</div>
+      <div class="sm-leg-item"><div class="sm-leg-dot" style="background:var(--red)"></div> Negativo</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ANALISI PER FONTE -->
+<div id="analisi-fonti">
+<section>
+  <div class="section-title">Analisi per Fonte</div>
+  <div class="section-subtitle">Scheda dettagliata per ciascuna delle 8 fonti analizzate</div>
+
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="showTab('feedaty',this)">Feedaty</button>
+    <button class="tab-btn" onclick="showTab('google',this)">Google Maps</button>
+    <button class="tab-btn" onclick="showTab('trustpilot',this)">Trustpilot</button>
+    <button class="tab-btn" onclick="showTab('aeo',this)">AEO Audit</button>
+    <button class="tab-btn" onclick="showTab('geo',this)">GEO Audit</button>
+    <button class="tab-btn" onclick="showTab('internet',this)">Web Sources</button>
+    <button class="tab-btn" onclick="showTab('reddit',this)">Reddit</button>
+    <button class="tab-btn" onclick="showTab('facebook',this)">Facebook</button>
+  </div>
+
+  <!-- FEEDATY -->
+  <div id="tab-feedaty" class="tab-content active">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--green)">
+        <div>
+          <h2>Feedaty</h2>
+          <div class="fonte-tipo">Review Platform · Verificate</div>
+        </div>
+        <span class="badge badge-green">Positivo</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">11.645</div><div class="fkpi-label">Recensioni</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">4.8<span style="font-size:14px;color:#aaa">/5</span></div><div class="fkpi-label">Rating Medio</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">11.062</div><div class="fkpi-label">Positive (95%)</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">314</div><div class="fkpi-label">Negative (2.7%)</div></div>
+          <div class="fkpi"><div class="fkpi-val">6</div><div class="fkpi-label">Cluster tematici</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Consegna veloce e puntuale</span>
+          <span class="tema-tag">Prezzi competitivi</span>
+          <span class="tema-tag">Servizio clienti</span>
+          <span class="tema-tag">Problemi con i corrieri</span>
+          <span class="tema-tag">Difficoltà di contatto</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Consegna veloce e puntuale <strong>(80% delle recensioni)</strong></li>
+              <li>Prezzi competitivi e convenienti <strong>(75%)</strong></li>
+              <li>Servizio clienti efficiente e disponibile <strong>(70%)</strong></li>
+              <li>Ampia scelta di prodotti <strong>(65%)</strong></li>
+              <li>Facilità di utilizzo della piattaforma <strong>(65%)</strong></li>
+              <li>Imballaggio accurato <strong>(60%)</strong></li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Problemi con i corrieri, GLS in particolare — ritardi e smarrimenti <strong>(60%)</strong></li>
+              <li>Difficoltà nel contattare il servizio clienti — risposte lente o insufficienti <strong>(65%)</strong></li>
+              <li>Mancanza di alcuni prodotti nel pacco ricevuto <strong>(45%)</strong></li>
+              <li>Problemi di imballaggio — pacchi danneggiati <strong>(40%)</strong></li>
+              <li>Email promozionali eccessive <strong>(30%)</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Revisione contratti con i corrieri per migliorare affidabilità delle consegne</li>
+            <li>Investimento in un sistema di assistenza più reattivo (priorità alta)</li>
+            <li>Ottimizzazione della strategia di invio email promozionali</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti</div>
+        <div class="kw-list">
+          <span class="kw-tag">consegna veloce</span><span class="kw-tag">prezzi competitivi</span><span class="kw-tag">servizio clienti</span><span class="kw-tag">ampia scelta</span><span class="kw-tag">imballaggio accurato</span><span class="kw-tag">problemi corrieri</span><span class="kw-tag">email promozionali</span>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Rating più alto tra tutte le fonti quantitative (<strong>4.8/5</strong>). Il cluster <strong>"Problemi con Ordini"</strong> (84 rec., 1.4%) ha rating 2.5 — nettamente il più basso di tutta la piattaforma. La distanza tra il rating generale (4.8) e il cluster problematico (2.5) evidenzia una <strong style="color:var(--red)">forte polarizzazione</strong> dell'esperienza. Leve marketing prioritarie: miglioramento servizio clienti (alta), ottimizzazione logistica (alta), gestione comunicazioni promozionali (media).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE -->
+  <div id="tab-google" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--blue)">
+        <div>
+          <h2>Google Maps / Google Business</h2>
+          <div class="fonte-tipo">Review Platform · Google Business Reviews</div>
+        </div>
+        <span class="badge badge-green">Positivo</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">3.311</div><div class="fkpi-label">Recensioni totali</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--blue)">4.6<span style="font-size:14px;color:#aaa">/5</span></div><div class="fkpi-label">Rating Medio</div></div>
+          <div class="fkpi"><div class="fkpi-val">2.210</div><div class="fkpi-label">Con testo</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">113</div><div class="fkpi-label">Risposte brand (3.4%)</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">3.052</div><div class="fkpi-label">Positive (92%)</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Prezzi e convenienza</span>
+          <span class="tema-tag">Consegna e spedizione</span>
+          <span class="tema-tag">Qualità del servizio clienti</span>
+          <span class="tema-tag">Imballaggio</span>
+          <span class="tema-tag">Gamma prodotti</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Prezzi competitivi e vantaggiosi — keyword #1 con <strong>653 occorrenze</strong></li>
+              <li>Spedizione rapida e puntuale — "consegna" 559 occ., "veloce/veloci" 453 occ.</li>
+              <li>Servizio clienti cordiale e disponibile</li>
+              <li>Ampia gamma di prodotti</li>
+              <li>Imballaggio accurato</li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Tempi di consegna non rispettati in alcuni casi</li>
+              <li>Servizio clienti inaccessibile (non rispondono al telefono)</li>
+              <li>Problemi con il corriere</li>
+              <li>Mancanza di comunicazione su ordini e spedizioni</li>
+              <li>Tasso risposta brand alle recensioni molto basso (<strong style="color:var(--red)">~3.4%</strong>)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Aumentare il tasso di risposta alle recensioni Google (da 3.4% verso 30%+)</li>
+            <li>Implementare notifiche SMS/email per tracking ordini in tempo reale</li>
+            <li>Introdurre numero verde per il servizio clienti</li>
+            <li>Creare programma fedeltà per clienti abituali</li>
+            <li>Rivedere i partner logistici — GLS in particolare</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti</div>
+        <div class="kw-list">
+          <span class="kw-tag">prezzi (653)</span><span class="kw-tag">consegna (559)</span><span class="kw-tag">veloce/veloci (453)</span><span class="kw-tag">ottimo/ottimi (697)</span><span class="kw-tag">prodotti (500)</span><span class="kw-tag">spedizione (413)</span><span class="kw-tag">servizio (359)</span><span class="kw-tag">competitivi (107)</span>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Il gap tra recensioni (<strong>3.311</strong>) e risposte brand (<strong>113 = 3.4%</strong>) è un'opportunità operativa immediata: rispondere sistematicamente alle recensioni — soprattutto le negative — migliora il ranking Google e segnala reattività. Le critiche si concentrano su logistica e comunicazione post-acquisto, <strong>non sulla qualità intrinseca del servizio</strong>: il brand ha dunque le leve per correggere le cause radicali senza stravolgere il modello.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUSTPILOT -->
+  <div id="tab-trustpilot" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--violet)">
+        <div>
+          <h2>Trustpilot</h2>
+          <div class="fonte-tipo">Review Platform · Open Reviews</div>
+        </div>
+        <span class="badge badge-green">Positivo</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">5.946</div><div class="fkpi-label">Recensioni totali</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--violet)">4.4<span style="font-size:14px;color:#aaa">/5</span></div><div class="fkpi-label">Rating Medio</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">5.007</div><div class="fkpi-label">Positive 84%</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">733</div><div class="fkpi-label">Negative 12.3%</div></div>
+          <div class="fkpi"><div class="fkpi-val">587</div><div class="fkpi-label">1★ (9.9%)</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Spedizione e Consegna (2.665 rec. · 36.5% · rating 4.4)</span>
+          <span class="tema-tag">Prezzi Competitivi (2.063 rec. · 28.8% · rating 4.6)</span>
+          <span class="tema-tag">Qualità dei Prodotti (1.306 rec. · 18.1% · rating 4.6)</span>
+          <span class="tema-tag">Servizio Clienti (866 rec. · 12.1% · rating 3.4)</span>
+          <span class="tema-tag">Esperienze Negative (613 rec. · 8.5% · rating 2.3)</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Prezzi competitivi, considerati tra i più bassi del settore <strong>(85%)</strong></li>
+              <li>Spedizione veloce e puntuale, consegne frequenti in meno di 24h <strong>(80%)</strong></li>
+              <li>Ampia gamma di prodotti <strong>(65%)</strong></li>
+              <li>Servizio clienti generalmente efficiente <strong>(65%)</strong></li>
+              <li>Imballaggio accurato e sicuro <strong>(60%)</strong></li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Tempi di consegna discontinui e ritardi frequenti <strong style="color:var(--red)">(70% rec. negative)</strong></li>
+              <li>Servizio clienti difficile da raggiungere <strong style="color:var(--red)">(65% rec. negative)</strong></li>
+              <li>Problemi di imballaggio e prodotti non ricevuti <strong>(55% rec. negative)</strong></li>
+              <li>Difficoltà di navigazione del sito dopo redesign <strong>(60% rec. negative)</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Sistema assistenza clienti multicanale più reattivo — <strong>Priorità Alta</strong></li>
+            <li>Ottimizzazione logistica — <strong>Priorità Alta</strong></li>
+            <li>Ottimizzazione UX sito web post-redesign — <strong>Priorità Media</strong></li>
+            <li>Gestione scorte più efficace — <strong>Priorità Media</strong></li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti</div>
+        <div class="kw-list">
+          <span class="kw-tag">prezzi competitivi</span><span class="kw-tag">spedizione veloce</span><span class="kw-tag">tempi di consegna</span><span class="kw-tag">servizio clienti</span><span class="kw-tag">imballaggio</span><span class="kw-tag">ampia gamma</span><span class="kw-tag">ritardi</span><span class="kw-tag">confezioni danneggiate</span>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Il cluster <strong>"Servizio Clienti e Affidabilità"</strong> è l'unico con rating inferiore a 4 (<strong style="color:var(--red)">3.4/5</strong>). La piattaforma mostra una <strong>forte polarizzazione 5★ vs 1★</strong>: l'esperienza è eccellente o pessima, con poca via di mezzo. Le <strong>587 recensioni 1★</strong> (9.9%) sono quasi esclusivamente generate da problemi operativi — logistica e servizio clienti — e non da insoddisfazione sul prodotto o prezzo. Questo conferma che <strong style="color:var(--red)">risolvere il servizio clienti ha un impatto diretto e misurabile sul rating</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AEO -->
+  <div id="tab-aeo" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--orange)">
+        <div>
+          <h2>SEOZoom AEO Audit</h2>
+          <div class="fonte-tipo">AI Answer Engine Audit · OpenAI GPT + Perplexity AI + Google Gemini</div>
+        </div>
+        <span class="badge badge-orange">Score Medio 61/100</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val" style="color:#10a37f">61</div><div class="fkpi-label">AEO Score GPT</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--orange)">42</div><div class="fkpi-label">AEO Score Perplexity</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">80</div><div class="fkpi-label">AEO Score Gemini</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">2/10</div><div class="fkpi-label">Share of Voice GPT</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">1/10</div><div class="fkpi-label">Share of Voice Perplexity</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Convenienza e prezzi</span>
+          <span class="tema-tag">Affidabilità e spedizioni</span>
+          <span class="tema-tag">Reputazione certificata</span>
+          <span class="tema-tag">Share of voice e posizionamento AI</span>
+          <span class="tema-tag">Confronto competitivo</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Sentiment positivo su tutti e 3 gli engine (<strong>80-88/100</strong>)</li>
+              <li>Riconoscimento brand come farmacia online italiana conveniente e affidabile</li>
+              <li>Forte reputazione basata su recensioni certificate citate dagli AI (Feedaty 4.8/5, Trustpilot 4.4/5)</li>
+              <li>Spedizioni rapide citate dagli AI (<strong>2-4 giorni, anche nei periodi festivi</strong>)</li>
+              <li>Ottima visibilità su Google Gemini (<strong>80/100</strong>)</li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Bassa share of voice su ChatGPT (<strong style="color:var(--red)">2/10</strong>) e Perplexity (<strong style="color:var(--red)">1/10</strong>)</li>
+              <li>Posizione di mercato Challenger, dominata da Redcare</li>
+              <li>Distribuzione geografica squilibrata (prevalentemente Nord Italia)</li>
+              <li>Qualità delle fonti citate media (<strong>5/10 su GPT</strong>)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Investire in AEO/SEO per aumentare presenza in ChatGPT e Perplexity</li>
+            <li>Sviluppare contenuti autorevoli e indicizzabili dagli AI (guide, FAQ strutturate, schema markup)</li>
+            <li>Creare programmi fedeltà strutturati per competere con RedPoints di Redcare</li>
+            <li>Espandere servizi a valore aggiunto (consulenza online, consegna express)</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti nei prompt AI</div>
+        <div class="kw-list">
+          <span class="kw-tag">prezzi competitivi</span><span class="kw-tag">consegne rapide</span><span class="kw-tag">farmacia online italiana</span><span class="kw-tag">affidabilità</span><span class="kw-tag">convenienza</span><span class="kw-tag">Redcare (competitor)</span>
+        </div>
+
+        <div class="note-box" style="background:#EEF2FF;border-color:#C7D4FF;margin-bottom:16px">
+          <h4 style="color:var(--blue)">Nota Metodologica — Come funziona l'AEO Audit di SEOZoom</h4>
+          <p style="margin-bottom:10px">L'<strong>AEO Audit</strong> (Answer Engine Optimization Audit) di SEOZoom analizza la visibilità di un brand nelle risposte generate dagli AI generativi (Large Language Models). A differenza della SEO tradizionale che misura il posizionamento nelle SERP, l'AEO misura quanto un brand viene citato, con quale sentiment e con quale autorevolezza nelle risposte che ChatGPT, Perplexity e Google Gemini forniscono agli utenti.</p>
+          <p style="margin-bottom:10px"><strong>Come viene calcolato l'AEO Score (0-100):</strong> Lo strumento sottopone agli engine AI un set di query standardizzate relative al settore (es. "quale farmacia online italiana è più affidabile?", "dove comprare integratori online in Italia?") e analizza le risposte su 4 dimensioni: (1) <em>Presenza del brand</em> — il brand viene citato o ignorato; (2) <em>Sentiment della citazione</em> — positivo, neutro o negativo; (3) <em>Posizione nella risposta</em> — primo citato, citato tra altri, citato marginalmente; (4) <em>Qualità delle fonti citate</em> — l'AI cita fonti ad alta autorevolezza che includono il brand (Trustpilot, Feedaty, Wikipedia, media di settore) o fonti deboli.</p>
+          <p style="margin-bottom:10px"><strong>Perché gli score variano tra engine:</strong> Ogni LLM ha una base di addestramento diversa e pesi diversi per le fonti. Gemini (80/100) indicizza massicciamente il web Google e quindi riflette la forte presenza organica di Top Farmacia su Google Search. ChatGPT (61/100) si basa su un corpus di addestramento più ampio ma meno dipendente dall'indicizzazione Google in tempo reale. Perplexity (42/100) usa un motore di ricerca live che privilegia fonti indipendenti e citazioni editoriali — dove Top Farmacia è oggi meno presente.</p>
+          <p><strong>Share of Voice (SoV):</strong> Indica quante volte il brand viene citato rispetto al totale delle citazioni nella categoria. Un SoV di 2/10 su ChatGPT significa che su 10 risposte che citano una farmacia online, Top Farmacia compare in 2. Redcare (leader) ha SoV significativamente più alto per via della sua presenza su Wikipedia, media europei e pubblicazioni di settore che gli LLM considerano fonti di alta qualità.</p>
+        </div>
+        <div class="note-box">
+          <h4>Note Analitiche</h4> Competitor principale identificato: <strong>Redcare</strong> (leader di mercato). Il forte gap <strong>Gemini 80 vs Perplexity 42</strong> indica che la visibilità AI è quasi interamente legata all'indicizzazione Google: espandere la strategia a fonti indipendenti (Wikipedia, Wikidata, pubblicazioni settoriali) è la leva principale per scalare su ChatGPT e Perplexity. Fonti citate dagli AI: Trustpilot (score 80), Feedaty (score 85).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEO -->
+  <div id="tab-geo" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--pink)">
+        <div>
+          <h2>SEOZoom GEO Audit</h2>
+          <div class="fonte-tipo">SEO & AI Visibility Audit Tool · Analisi Qualitativa</div>
+        </div>
+        <span class="badge badge-green">Positivo</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">5</div><div class="fkpi-label">Criticità "Media"</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">Positivo</div><div class="fkpi-label">Sentiment AI</div></div>
+          <div class="fkpi"><div class="fkpi-val">Qualitativa</div><div class="fkpi-label">Metodologia</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Prezzi e offerte commerciali</span>
+          <span class="tema-tag">Assortimento prodotti</span>
+          <span class="tema-tag">Logistica e spedizioni</span>
+          <span class="tema-tag">Affidabilità e sicurezza</span>
+          <span class="tema-tag">Consulenza e servizio clienti</span>
+          <span class="tema-tag">UX navigazione</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Prezzi vantaggiosi — driver primario di scelta identificato dall'AI</li>
+              <li>Catalogo prodotti vasto e aggiornato</li>
+              <li>Spedizioni rapide e tracciabili</li>
+              <li>Autorizzazione Ministero della Salute — trasparenza legale rilevata</li>
+              <li>Facilità d'uso della piattaforma</li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Mancanza di consulenza farmaceutica diretta — pain point qualitativo principale</li>
+              <li>Ritardi occasionali nelle spedizioni</li>
+              <li>Disponibilità limitata di alcuni stock</li>
+              <li>Costi di spedizione possono vanificare il risparmio</li>
+              <li>Difficoltà di navigazione e ricerca prodotti</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Consulenza farmaceutica online in tempo reale (chat/video con farmacista)</li>
+            <li>Ottimizzazione struttura navigazione e filtri di ricerca</li>
+            <li>Gestione stock con notifiche disponibilità e pre-ordini</li>
+            <li>Contenuti educativi su salute e benessere per aumentare autorità AI</li>
+            <li>Programma fedeltà per aumentare retention</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword rilevate</div>
+        <div class="kw-list">
+          <span class="kw-tag">prezzi competitivi</span><span class="kw-tag">vasta scelta</span><span class="kw-tag">spedizione veloce</span><span class="kw-tag">affidabilità</span><span class="kw-tag">comodità</span><span class="kw-tag">qualità</span><span class="kw-tag">ritardi spedizione</span><span class="kw-tag">consulenza diretta</span>
+        </div>
+
+        <div class="note-box" style="background:#FDF0F6;border-color:#F0B8D4;margin-bottom:16px">
+          <h4 style="color:var(--pink)">Nota Metodologica — Come funziona il GEO Audit di SEOZoom</h4>
+          <p style="margin-bottom:10px">Il <strong>GEO Audit</strong> (Generative Engine Optimization Audit) è un'analisi qualitativa che va oltre i punteggi numerici dell'AEO: esamina <em>come</em> gli AI descrivono il brand, quali attributi associano, quali criticità segnalano e come si posiziona rispetto ai competitor nelle risposte generate. A differenza dell'AEO Score — che è quantitativo — il GEO è interpretativo e fornisce una mappa semantica del brand percepito dagli AI.</p>
+          <p style="margin-bottom:10px"><strong>Come funziona:</strong> SEOZoom sottopone al modello AI una serie di query contestuali (es. "Quali sono i punti di forza e debolezza di Top Farmacia?", "Cosa dicono i clienti di Top Farmacia?", "Conviene comprare su Top Farmacia?") e analizza le risposte per estrarre: (1) <em>Attributi positivi ricorrenti</em>; (2) <em>Criticità sistematicamente citate</em>; (3) <em>Archetipo di brand percepito</em> (Caregiver, Leader, Sfidante, ecc.); (4) <em>Coerenza delle informazioni fattuali</em> (orari, contatti, disponibilità — le "criticità media" segnalate).</p>
+          <p style="margin-bottom:10px"><strong>Le 5 criticità "Media":</strong> Indicano informazioni che gli AI riportano in modo incoerente o impreciso tra una risposta e l'altra. Tipicamente riguardano: orari del servizio clienti, costi di spedizione variabili, disponibilità di categorie specifiche di prodotti. Queste criticità si risolvono con ottimizzazione delle pagine chiave del sito (FAQ, About, Contatti) e dati strutturati (schema.org) che gli AI possono leggere in modo affidabile.</p>
+          <p><strong>Differenza AEO vs GEO:</strong> L'AEO risponde a "quanto viene citato il brand?" con un numero. Il GEO risponde a "come viene descritto il brand?" con una mappa qualitativa. Entrambi sono necessari per una strategia AI visibility completa: un brand può avere alto AEO score ma GEO negativo (citato spesso ma male), o viceversa AEO basso ma GEO positivo (citato poco ma sempre in modo lusinghiero).</p>
+        </div>
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Strumento che misura la visibilità del brand nei modelli AI generativi (LLM). Le <strong>5 criticità "Media"</strong> segnalate indicano aree di miglioramento nella coerenza delle informazioni indicizzate dagli AI — in particolare su orari, contatti, disponibilità prodotti. Il sentiment classificato come positivo dall'AI di SEOZoom è coerente con le fonti quantitative. Si raccomanda integrazione continuativa con dati diretti dalle piattaforme di recensione per validare le analisi qualitative.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNET -->
+  <div id="tab-internet" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--orange)">
+        <div>
+          <h2>Internet — Web Sources</h2>
+          <div class="fonte-tipo">Aggregatore Fonti Web · BestShopping · Italia Recensioni · Blog ClioMakeUp · Forum L'Angolo di Lola</div>
+        </div>
+        <span class="badge badge-orange">Positivo con cluster negativo</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">4</div><div class="fkpi-label">Fonti aggregate</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">73%</div><div class="fkpi-label">Sentiment positivo</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">27%</div><div class="fkpi-label">Sentiment negativo</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">19,90€</div><div class="fkpi-label">Soglia spedizione gratuita</div></div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Prezzi</span>
+          <span class="tema-tag">Spedizione gratuita (soglia 19,90€)</span>
+          <span class="tema-tag">Servizio clienti</span>
+          <span class="tema-tag">Disponibilità prodotti</span>
+          <span class="tema-tag">Affidabilità ordini</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Soglia spedizione gratuita a <strong>19,90€</strong> — nettamente inferiore alla media di mercato (50-60€)</li>
+              <li>Velocità di consegna: evasione ordini in <strong>1-3 giorni lavorativi</strong></li>
+              <li>Prezzi competitivi e scontistica frequente</li>
+              <li>Prodotti autentici e ben descritti</li>
+              <li>Ottimo rapporto qualità/prezzo</li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Servizio clienti irraggiungibile: <strong style="color:var(--red)">assenza di email visibile</strong> e nessuna risposta ai moduli di contatto</li>
+              <li>Aggiornamento magazzino non in tempo reale</li>
+              <li>Nessun canale di comunicazione rapido (no chat, no telefono accessibile)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Attivare un canale di assistenza clienti visibile e reattivo (live chat o email dedicata)</li>
+            <li>Notifiche automatiche disponibilità prodotto e aggiornamento stock in real time</li>
+            <li>Presidiare attivamente le piattaforme di recensione con risposte ufficiali del brand</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti</div>
+        <div class="kw-list">
+          <span class="kw-tag">prezzi</span><span class="kw-tag">spedizione gratuita</span><span class="kw-tag">assistenza</span><span class="kw-tag">contatto</span><span class="kw-tag">consegna</span><span class="kw-tag">affidabile</span><span class="kw-tag">prodotto</span>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Particolare rilievo della soglia di spedizione gratuita (<strong>19,90€</strong>) come leva competitiva esclusiva: citata in modo spontaneo e ripetuto nelle discussioni, superiore alla media di settore (50-60€) — <strong>un vantaggio competitivo misurabile raramente capitalizzato nella comunicazione brand</strong>. Il sentiment negativo (<strong>27%</strong>) è quasi monofocale: tutte le critiche convergono sull'assistenza clienti post-vendita, confermando la criticità cross-fonte già emersa su Trustpilot e Google Maps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REDDIT -->
+  <div id="tab-reddit" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:var(--red)">
+        <div>
+          <h2>Reddit</h2>
+          <div class="fonte-tipo">Social Listening · 8 Subreddit Italiani · Febbraio 2025 – Febbraio 2026</div>
+        </div>
+        <span class="badge badge-gray">Non rilevabile (brand) · Settore attivo</span>
+      </div>
+      <div class="fonte-body">
+
+        <!-- KPI ROW -->
+        <div class="reddit-kpi-row">
+          <div class="reddit-kpi"><div class="reddit-kpi-val" style="color:var(--red)">0</div><div class="reddit-kpi-label">Menzioni brand</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val">12</div><div class="reddit-kpi-label">Thread analizzati</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val">~60</div><div class="reddit-kpi-label">Commenti rilevanti</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val">8</div><div class="reddit-kpi-label">Subreddit</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val">6</div><div class="reddit-kpi-label">Brand menzionati</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val" style="color:var(--orange)">45%</div><div class="reddit-kpi-label">Neutro/interrogativo</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val" style="color:var(--green)">35%</div><div class="reddit-kpi-label">Positivo settore</div></div>
+          <div class="reddit-kpi"><div class="reddit-kpi-val" style="color:var(--red)">20%</div><div class="reddit-kpi-label">Negativo settore</div></div>
+        </div>
+
+        <!-- DATO CRITICO -->
+        <div style="background:#FEE8E7;border-radius:6px;padding:20px 24px;margin-bottom:24px;border-left:4px solid var(--red)">
+          <p style="font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Dato Critico: 0 menzioni dirette del brand su Reddit</p>
+          <p style="font-size:12px;color:var(--gray-text)">Su <strong>12 thread analizzati</strong> in <strong>8 subreddit italiani</strong> (r/italy, r/CasualIT, r/ItalyInformatica, r/commercialisti, r/ItaliaPersonalFinance, r/Avvocati, r/Truffaonline, r/amexItaly) — <strong style="color:var(--red)">nessun utente ha menzionato Top Farmacia</strong>. Né in positivo né in negativo. Il brand è completamente invisibile in questo ecosistema, nonostante il settore delle farmacie online sia attivamente discusso. La stessa assenza vale per tutti i principali competitor italiani diretti: DrMax, eFarma, Farmacia Loreto risultano anch'essi a 0 menzioni spontanee.</p>
+        </div>
+
+        <!-- SENTIMENT OVERVIEW -->
+        <div class="label-bold">Sentiment del Settore su Reddit</div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:20px 24px;margin-bottom:24px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+            <div>
+              <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-bottom:12px">Sentiment Totale Conversazioni (72 post)</div>
+              <div class="sm-row" style="margin-bottom:8px">
+                <div class="sm-source" style="width:160px;font-size:12px">Positivo (risparmio, comodità)</div>
+                <div class="sm-bars"><div class="sm-bar-pos" style="width:35%">35%</div></div>
+              </div>
+              <div class="sm-row" style="margin-bottom:8px">
+                <div class="sm-source" style="width:160px;font-size:12px">Neutro / Interrogativo</div>
+                <div class="sm-bars"><div class="sm-bar-neu" style="width:45%">45%</div></div>
+              </div>
+              <div class="sm-row">
+                <div class="sm-source" style="width:160px;font-size:12px">Negativo (truffe, assistenza)</div>
+                <div class="sm-bars"><div class="sm-bar-neg" style="width:20%;border-radius:2px">20%</div></div>
+              </div>
+              <p style="font-size:11px;color:#aaa;margin-top:12px">La maggioranza ha tono neutro o interrogativo: gli utenti cercano informazioni, confrontano prezzi, chiedono conferme. Il sentiment negativo è concentrato sui thread di segnalazione truffe.</p>
+            </div>
+            <div>
+              <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-text);margin-bottom:12px">Brand Menzionati e Sentiment</div>
+              <table class="reddit-brand-table">
+                <thead><tr><th>Brand</th><th>Menzioni</th><th>Sentiment</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td class="brand-cell">iHerb</td>
+                    <td class="mentions-cell">8</td>
+                    <td><span class="badge badge-green" style="font-size:9px">Misto-positivo</span></td>
+                  </tr>
+                  <tr>
+                    <td class="brand-cell">Farmacie campane (generiche)</td>
+                    <td class="mentions-cell">10</td>
+                    <td><span class="badge badge-orange" style="font-size:9px">Misto</span></td>
+                  </tr>
+                  <tr>
+                    <td class="brand-cell">Redcare</td>
+                    <td class="mentions-cell">5</td>
+                    <td><span class="badge badge-gray" style="font-size:9px">Neutro</span></td>
+                  </tr>
+                  <tr>
+                    <td class="brand-cell">Talea Group (Farmahome, Farmae…)</td>
+                    <td class="mentions-cell">4</td>
+                    <td><span class="badge badge-red" style="font-size:9px">Molto negativo</span></td>
+                  </tr>
+                  <tr>
+                    <td class="brand-cell">Amazon (farmaci)</td>
+                    <td class="mentions-cell">3</td>
+                    <td><span class="badge badge-gray" style="font-size:9px">Neutro</span></td>
+                  </tr>
+                  <tr>
+                    <td class="brand-cell" style="color:#aaa">DrMax / eFarma / Farmacia Loreto / <strong style="color:var(--red)">Top Farmacia</strong></td>
+                    <td class="mentions-cell" style="color:#aaa">0</td>
+                    <td><span class="badge badge-gray" style="font-size:9px">Non menzionati</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORD CLOUD SETTORE -->
+        <div class="label-bold">Keyword più frequenti nei Thread Reddit (settore farmacie online)</div>
+        <div class="reddit-wc" style="background:var(--gray-light);border-radius:6px;padding:16px 20px;margin-bottom:24px">
+          <span style="font-size:28px;font-weight:700;color:#E52217">farmacia</span>
+          <span style="font-size:26px;font-weight:700;color:#E52217">online</span>
+          <span style="font-size:24px;font-weight:700;color:#E52217">prezzi</span>
+          <span style="font-size:22px;font-weight:700;color:#E52217">farmaci</span>
+          <span style="font-size:22px;font-weight:700;color:#FF5147">spedizione</span>
+          <span style="font-size:19px;font-weight:700;color:#FF5147">detrazione</span>
+          <span style="font-size:19px;font-weight:700;color:#FF5147">acquisto</span>
+          <span style="font-size:18px;font-weight:700;color:#FF5147">affidabile</span>
+          <span style="font-size:18px;font-weight:700;color:#FF5147">integratori</span>
+          <span style="font-size:17px;font-weight:600;color:#FF7A73">risparmio</span>
+          <span style="font-size:16px;font-weight:600;color:#FF8880">cosmetici</span>
+          <span style="font-size:16px;font-weight:600;color:#FF8880">convenienza</span>
+          <span style="font-size:15px;font-weight:600;color:#FFAAA5">truffa</span>
+          <span style="font-size:15px;font-weight:600;color:#FFAAA5">corriere</span>
+          <span style="font-size:14px;font-weight:600;color:#FFAAA5">sicuro</span>
+          <span style="font-size:14px;font-weight:600;color:#FFCFCC">catena freddo</span>
+          <span style="font-size:14px;font-weight:600;color:#FFCFCC">rimborso</span>
+          <span style="font-size:13px;font-weight:500;color:#C8C8C8">vitamina</span>
+          <span style="font-size:13px;font-weight:500;color:#C8C8C8">magnesio</span>
+          <span style="font-size:12px;font-weight:500;color:#8A8A8A">assistenza</span>
+          <span style="font-size:12px;font-weight:500;color:#8A8A8A">iHerb</span>
+          <span style="font-size:12px;font-weight:500;color:#8A8A8A">Redcare</span>
+        </div>
+
+        <!-- TEMI RICORRENTI -->
+        <div class="label-bold">8 Temi Ricorrenti nelle Discussioni Reddit</div>
+        <div class="reddit-temi-grid">
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Detrazioni Fiscali</div>
+              <span class="badge badge-gray">Neutro</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:85%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Alta — 3 thread diretti, 10+ commenti correlati</div>
+            <div class="reddit-tema-quote">"Se ho comprato un farmaco su Amazon e ho il foglio con il rendiconto della spedizione, può essere usato per la detrazione nel 730?" <a href="https://www.reddit.com/r/ItaliaPersonalFinance/comments/1jfmpfs/" target="_blank">r/ItaliaPersonalFinance →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Enorme confusione procedurale su detraibilità acquisti online, documentazione necessaria, differenze tra farmacia fisica, online e marketplace. Il tema con più domande senza risposta esauriente — opportunità content per Top Farmacia.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Prezzi & Convenienza</div>
+              <span class="badge badge-green">Positivo</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:90%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Alta — 2 thread principali, 15+ commenti</div>
+            <div class="reddit-tema-quote">"Le 10-15 farmacie online con i prezzi sempre nel top di trovaprezzi sono tutte con sede a Napoli o Caserta [...] risparmio del 20-25% rispetto alla farmacia fisica" <a href="https://www.reddit.com/r/CasualIT/comments/1p3p9xi/" target="_blank">r/CasualIT →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Il risparmio (20-25% vs farmacia fisica) è il principale driver. Gli utenti usano attivamente aggregatori di prezzi come trovaprezzi. <strong>Top Farmacia #7 per traffico con prezzi competitivi</strong> — vantaggio potenzialmente capitalizzabile su Reddit.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Affidabilità & Truffe</div>
+              <span class="badge badge-red">Negativo</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:70%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Media-alta — 2 thread specifici, 8+ commenti</div>
+            <div class="reddit-tema-quote">"Diverse segnalazioni di utenti che hanno pagato ma non hanno mai ricevuto nulla da Farmahome, Farmae, SuperFarma, Farmaeurope, Amica Farmacia" <a href="https://www.reddit.com/r/Truffaonline/comments/1kvqjba/" target="_blank">r/Truffaonline →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Il caso Talea Group ha aumentato la diffidenza generalizzata. Gli utenti non sanno verificare l'autorizzazione ministeriale. <strong>Top Farmacia ha la certificazione ministeriale</strong> — asset comunicativo di primo piano su questo tema.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Assistenza Clienti & Resi</div>
+              <span class="badge badge-red">Negativo</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:60%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Media — 1 thread diretto, 6 commenti</div>
+            <div class="reddit-tema-quote">"Parafarmacia online non risponde: ho diritto al rimborso? Come mi comporto?" <a href="https://www.reddit.com/r/Avvocati/comments/1pd3lma/" target="_blank">r/Avvocati →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> La mancanza di assistenza clienti è un tema Reddit con rilevanza diretta per Top Farmacia, che ha questo stesso problema segnalato su Trustpilot e Facebook. Risolvere l'assistenza = eliminare il principale rischio reputazionale anche su Reddit.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Integratori & iHerb</div>
+              <span class="badge badge-green">Opportunità</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:55%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Media — 1 thread dedicato, 8+ commenti</div>
+            <div class="reddit-tema-quote">"Dove comprare integratori affidabili in Italia? Su iHerb non trovo alternative locali…" <a href="https://www.reddit.com/r/CasualIT/comments/1ph73kc/" target="_blank">r/CasualIT →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Gli utenti si rivolgono a iHerb (sito estero) per mancanza di alternative italiane percepite come affidabili. Non è un problema di offerta ma di <strong>comunicazione della qualità</strong>. Top Farmacia vende gli stessi prodotti con garanzie normative italiane superiori.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Catena del Freddo</div>
+              <span class="badge badge-gray">Freno latente</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:40%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Media — commento ricorrente in 3 thread</div>
+            <div class="reddit-tema-quote">"Ma la catena del freddo per i farmaci è garantita durante la spedizione?" <a href="https://www.reddit.com/r/CasualIT/comments/1p3p9xi/" target="_blank">r/CasualIT →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> La preoccupazione sulla conservazione è menzionata come deterrente, ma nessun operatore risponde o comunica proattivamente le procedure. Una pagina dedicata sul sito + risposte nei thread Reddit dove il tema emerge risolverebbe un freno all'acquisto non presidiato.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Motivi Prezzi Bassi al Sud</div>
+              <span class="badge badge-gray">Neutro</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:35%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Media — 1 thread dedicato, 7 commenti</div>
+            <div class="reddit-tema-quote">"Perché le farmacie online campane hanno prezzi sempre più bassi?" <a href="https://www.reddit.com/r/CasualIT/comments/1p3p9xi/" target="_blank">r/CasualIT →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Il tema dei lavoratori in cooperative con bassi salari rischia di diventare un problema reputazionale per l'intero settore. Opportunità per Top Farmacia di posizionarsi come operatore trasparente e responsabile rispetto ai competitor.</div>
+          </div>
+          <div class="reddit-tema">
+            <div class="reddit-tema-header">
+              <div class="reddit-tema-title">Detrazioni con AMEX / Pagamenti</div>
+              <span class="badge badge-gray">Neutro</span>
+            </div>
+            <div class="reddit-tema-freq-track"><div class="reddit-tema-freq-fill" style="width:25%"></div></div>
+            <div class="reddit-tema-freq-label">Frequenza: Bassa — 1 thread, 5 commenti (r/amexItaly)</div>
+            <div class="reddit-tema-quote">"Se pago la farmacia online con AMEX, i punti valgono come categoria farmacia?" <a href="https://www.reddit.com/r/amexItaly/comments/1cz1lnd/" target="_blank">r/amexItaly →</a></div>
+            <div class="reddit-tema-insight"><strong>Insight:</strong> Nicchia emersa su r/amexItaly — indica che una quota di utenti è attenta ai benefici di pagamento. Nessun operatore presidia questa specifica community, che ha alto potere d'acquisto.</div>
+          </div>
+        </div>
+
+        <!-- FAQ UTENTI -->
+        <div class="label-bold">Domande Frequenti degli Utenti Reddit — Base per Content Strategy</div>
+        <div class="reddit-faq-grid" style="margin-bottom:24px">
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M9 18h6M12 14v-4M12 6v.01"/></svg></div>
+              Come funziona la detrazione fiscale per acquisti in farmacia online?
+            </div>
+            <div class="reddit-faq-freq">Alta frequenza — 3 thread diretti</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/commercialisti/comments/1cemrwa/" target="_blank">Vedi thread r/commercialisti →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              Quali farmacie online sono davvero affidabili?
+            </div>
+            <div class="reddit-faq-freq">Alta frequenza — tema trasversale in 5+ thread</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/CasualIT/comments/1ph73kc/" target="_blank">Vedi thread r/CasualIT →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              Perché le farmacie online al Sud hanno prezzi più bassi?
+            </div>
+            <div class="reddit-faq-freq">Media frequenza — 1 thread dedicato, 7 commenti</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/CasualIT/comments/1p3p9xi/" target="_blank">Vedi thread r/CasualIT →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              Posso detrarre farmaci acquistati su Amazon nel 730?
+            </div>
+            <div class="reddit-faq-freq">Media frequenza — 2 thread correlati</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/ItaliaPersonalFinance/comments/1jfmpfs/" target="_blank">Vedi thread r/ItaliaPersonalFinance →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div>
+              Dove comprare integratori affidabili online in Italia?
+            </div>
+            <div class="reddit-faq-freq">Media frequenza — 1 thread dedicato, 8 commenti</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/CasualIT/comments/1ph73kc/" target="_blank">Vedi thread r/CasualIT →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+              La catena del freddo è garantita per farmaci spediti online?
+            </div>
+            <div class="reddit-faq-freq">Media frequenza — commento ricorrente in 3 thread</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/CasualIT/comments/1p3p9xi/" target="_blank">Vedi thread r/CasualIT →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+              Cosa fare se la farmacia online non risponde e non rimborsa?
+            </div>
+            <div class="reddit-faq-freq">Bassa-media frequenza — 1 thread (r/Avvocati)</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/Avvocati/comments/1pd3lma/" target="_blank">Vedi thread r/Avvocati →</a>
+          </div>
+          <div class="reddit-faq">
+            <div class="reddit-faq-q">
+              <div class="reddit-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+              Come verificare se una farmacia online è autorizzata dal Ministero?
+            </div>
+            <div class="reddit-faq-freq">Bassa frequenza — domanda implicita in 4+ thread</div>
+            <a class="reddit-faq-link" href="https://www.reddit.com/r/Truffaonline/comments/1kvqjba/" target="_blank">Vedi thread r/Truffaonline →</a>
+          </div>
+        </div>
+
+        <!-- INSIGHT STRATEGICI REDDIT -->
+        <div class="label-bold">Insight Strategici — Reddit come Canale per Top Farmacia</div>
+        <div class="reddit-insight-grid" style="margin-bottom:16px">
+          <div class="reddit-insight">
+            <div class="reddit-insight-num">01</div>
+            <div class="reddit-insight-title">Nessun brand italiano presidia Reddit</div>
+            <div class="reddit-insight-body">DrMax, eFarma, Farmacia Loreto, farmacia.it, <strong>Top Farmacia</strong>: tutti a 0 menzioni spontanee. iHerb e Redcare emergono per default. Reddit è un canale ad alto trust per la fascia 25-40 anni: la conversazione esiste, ma nessun competitor diretto ci è.</div>
+            <div class="reddit-insight-rec">
+              <div class="reddit-insight-rec-label">Raccomandazione</div>
+              Presidio organico con contenuti genuinamente utili (non promozionali): guide, FAQ, risposte esperte nei subreddit rilevanti. Finestra di primo entrante ancora aperta.
+            </div>
+          </div>
+          <div class="reddit-insight">
+            <div class="reddit-insight-num">02</div>
+            <div class="reddit-insight-title">Le detrazioni fiscali: tema informativo #1 senza risposta</div>
+            <div class="reddit-insight-body">Il tema con il più alto numero di domande senza risposta soddisfacente. Chi produce una guida chiara e aggiornata su "come detrarre farmaci acquistati online" intercetta un bisogno reale e posizionato, differenziandosi dagli operatori non autorizzati.</div>
+            <div class="reddit-insight-rec">
+              <div class="reddit-insight-rec-label">Raccomandazione</div>
+              Creare un contenuto pillar sulle detrazioni fiscali per farmaci online, con FAQ, esempi pratici, aggiornamenti annuali. Distribuirlo su Reddit con link ai thread già attivi.
+            </div>
+          </div>
+          <div class="reddit-insight">
+            <div class="reddit-insight-num">03</div>
+            <div class="reddit-insight-title">Il gap integratori vs iHerb è un'opportunità reale</div>
+            <div class="reddit-insight-body">Gli utenti si rivolgono a iHerb per mancanza di alternative italiane percepite come affidabili. Non è un problema di offerta, ma di comunicazione della qualità. Le farmacie online italiane vendono gli stessi prodotti ma non vengono cercate o raccomandate.</div>
+            <div class="reddit-insight-rec">
+              <div class="reddit-insight-rec-label">Raccomandazione</div>
+              Content marketing centrato su qualità, certificazioni e vantaggi normativi degli integratori acquistati in farmacia italiana vs siti esteri. Guide per categorie specifiche (vitamina D, magnesio, omega-3).
+            </div>
+          </div>
+          <div class="reddit-insight">
+            <div class="reddit-insight-num">04</div>
+            <div class="reddit-insight-title">Il prezzo è il driver, la fiducia è il moltiplicatore</div>
+            <div class="reddit-insight-body">Il risparmio 20-25% è dato per acquisito. La differenziazione deve avvenire su affidabilità, trasparenza, assistenza e qualità percepita — variabili su cui nessun operatore comunica nei canali organici. Il caso Talea Group ha aumentato la diffidenza: ne beneficia chi può dimostrare di essere diverso.</div>
+            <div class="reddit-insight-rec">
+              <div class="reddit-insight-rec-label">Raccomandazione</div>
+              Logo ministeriale in evidenza, testimonianze verificate, SLA di risposta pubblici, presenza su Reddit con approccio educativo e non promozionale. Account brand con AMA mensile — u/FarmacistTopFarmacia.
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Opportunità (territorio libero)</h4>
+            <ul>
+              <li>Nessuna percezione negativa consolidata del brand — terreno vergine</li>
+              <li>Primo entrante farmaceutico professionale italiano su Reddit</li>
+              <li>Credenziali di fiducia (15 anni, farmacisti, certificazione ministeriale) molto valorizzate dalla community Reddit</li>
+              <li>Tutti i principali competitor diretti sono assenti: finestra aperta</li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Rischi dell'assenza prolungata</h4>
+            <ul>
+              <li>Totale invisibilità in un ecosistema con alto engagement organico (fascia 25-40)</li>
+              <li>iHerb percepito come unica alternativa affidabile per integratori</li>
+              <li>Nessun presidio dei thread ad alto traffico già esistenti</li>
+              <li>La finestra di primo entrante si chiude con l'arrivo dei competitor</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list" style="margin-bottom:24px">
+          <h4>Piano di Ingresso Consigliato</h4>
+          <ul>
+            <li>Rispondere ai thread aperti senza risposta professionale con contenuti di valore (approccio educativo, non promozionale)</li>
+            <li>Creare account Reddit brand con AMA mensile — <strong>u/FarmacistTopFarmacia</strong> — da avviare entro <strong style="color:var(--red)">Q1 2026</strong></li>
+            <li>Sfruttare i video YouTube come risorse educative condivisibili nei thread tematici</li>
+            <li>Creare contenuto pillar sulle detrazioni fiscali farmaci online e distribuirlo su Reddit</li>
+          </ul>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Metodologiche</h4>
+          <p>Analisi condotta tramite Reddit MCP Server su conversazioni italiane pubblicamente disponibili. <strong>Subreddit analizzati:</strong> r/italy, r/CasualIT, r/ItalyInformatica, r/commercialisti, r/ItaliaPersonalFinance, r/Avvocati, r/Truffaonline, r/amexItaly. <strong>Periodo:</strong> Febbraio 2025 – Febbraio 2026. <strong>Limitazioni:</strong> campione Reddit non rappresentativo dell'intera popolazione italiana; i subreddit di settore dedicati (farmacie, salute, benessere) sono inattivi o inesistenti; i brand italiani principali non emergono per assenza di menzioni spontanee, non per assenza di utenti. L'assenza di Top Farmacia è sia un rischio (invisibilità) che un'<strong>opportunità strategica di primo entrante</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACEBOOK -->
+  <div id="tab-facebook" class="tab-content">
+    <div class="fonte-card">
+      <div class="fonte-header" style="border-left-color:#1877F2">
+        <div>
+          <h2>Facebook Reviews</h2>
+          <div class="fonte-tipo">Social Media · Sentiment Analysis · 803 Recensioni Analizzate</div>
+        </div>
+        <span class="badge" style="background:#E7F0FD;color:#1877F2">Misto — Prevalenza Positiva</span>
+      </div>
+      <div class="fonte-body">
+        <div class="fonte-kpi-row">
+          <div class="fkpi"><div class="fkpi-val">803</div><div class="fkpi-label">Recensioni analizzate</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--green)">55%</div><div class="fkpi-label">Positive</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--orange)">5%</div><div class="fkpi-label">Neutre</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">40%</div><div class="fkpi-label">Negative</div></div>
+          <div class="fkpi"><div class="fkpi-val" style="color:var(--red)">N/D</div><div class="fkpi-label">Rating stellare</div></div>
+        </div>
+
+        <div style="background:var(--gray-light);border-radius:6px;padding:20px 24px;margin-bottom:24px">
+          <div class="label-bold" style="margin-bottom:12px">Distribuzione Sentiment</div>
+          <div class="sm-row">
+            <div class="sm-source" style="width:130px">Positive</div>
+            <div class="sm-bars">
+              <div class="sm-bar-pos" style="width:55%">55% · ~441 rec.</div>
+            </div>
+          </div>
+          <div class="sm-row" style="margin-top:6px">
+            <div class="sm-source" style="width:130px">Neutre</div>
+            <div class="sm-bars">
+              <div class="sm-bar-neu" style="width:5%;border-radius:2px">5%</div>
+            </div>
+          </div>
+          <div class="sm-row" style="margin-top:6px">
+            <div class="sm-source" style="width:130px">Negative</div>
+            <div class="sm-bars">
+              <div class="sm-bar-neg" style="width:40%;border-radius:2px">40% · ~321 rec.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="label-bold">Temi principali</div>
+        <div class="temi-list">
+          <span class="tema-tag">Problemi di consegna (25 menzioni)</span>
+          <span class="tema-tag">Assistenza clienti inesistente (20 menzioni)</span>
+          <span class="tema-tag">Prezzi competitivi (18 menzioni)</span>
+          <span class="tema-tag">Velocità della consegna (15 menzioni)</span>
+          <span class="tema-tag">Errori nell'ordine (5 menzioni)</span>
+          <span class="tema-tag">Buon servizio clienti (3 menzioni)</span>
+        </div>
+
+        <div class="two-col">
+          <div class="col-box green">
+            <h4>Punti di Forza</h4>
+            <ul>
+              <li>Prezzi competitivi rispetto al mercato — <strong>18 menzioni esplicite</strong></li>
+              <li>Consegna rapida segnalata dai clienti soddisfatti — <strong>15 menzioni esplicite</strong></li>
+              <li>Risoluzione puntuale di alcuni problemi da parte del servizio clienti — <strong>3 menzioni</strong></li>
+            </ul>
+          </div>
+          <div class="col-box red">
+            <h4>Punti di Debolezza</h4>
+            <ul>
+              <li>Mancate consegne o consegne non tracciate — <strong style="color:var(--red)">25 menzioni</strong></li>
+              <li>Assistenza clienti irraggiungibile o inefficace — <strong style="color:var(--red)">20 menzioni</strong></li>
+              <li>Prodotti errati spediti rispetto all'ordine — <strong>5 menzioni</strong></li>
+              <li>Segnalazioni di potenziale frode — ad alto impatto reputazionale</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="opp-list">
+          <h4>Opportunità</h4>
+          <ul>
+            <li>Implementare un processo di gestione proattiva delle recensioni negative su Facebook con risposte pubbliche documentate</li>
+            <li>Migliorare la comunicazione post-acquisto con aggiornamenti automatici sullo stato dell'ordine</li>
+            <li>Potenziare il canale di assistenza clienti con SLA definiti e pubblici</li>
+          </ul>
+        </div>
+
+        <div class="label-bold">Keyword ricorrenti</div>
+        <div class="kw-list">
+          <span class="kw-tag">consegna</span><span class="kw-tag">assistenza clienti</span><span class="kw-tag">ordine</span><span class="kw-tag">prezzi competitivi</span><span class="kw-tag">veloce</span><span class="kw-tag">truffa</span><span class="kw-tag">ritardo</span><span class="kw-tag">prodotto errato</span><span class="kw-tag">integratori</span>
+        </div>
+
+        <div style="background:#FEE8E7;border-radius:6px;padding:16px 20px;margin-bottom:16px;border-left:4px solid var(--red)">
+          <p style="font-size:12px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">⚠ Rischio Reputazionale Elevato</p>
+          <p style="font-size:12px;color:var(--gray-text)">Il <strong style="color:var(--red)">40% di sentiment negativo</strong> su Facebook è il dato più critico dell'intera analisi cross-fonte. Facebook tende a polarizzare il sentiment (i clienti molto soddisfatti e quelli molto insoddisfatti sono sovrarappresentati), ma la quota negativa rimane significativamente superiore a Feedaty (2.7%) e Google Maps (6%). Le keyword "<strong>truffa</strong>" e "<strong>prodotto errato</strong>" hanno un impatto virale elevato su questa piattaforma.</p>
+        </div>
+
+        <div class="note-box">
+          <h4>Note Analitiche</h4>
+          <p>Dati estratti da <strong>803 recensioni Facebook</strong> processate tramite tool di sentiment analysis. Le percentuali di sentiment (<strong>55% / 5% / 40%</strong>) sono valori esatti riportati dallo strumento di analisi. I volumi per cluster tematico sono anch'essi dati certi. La fonte Facebook non dispone di un sistema di rating stellare — l'analisi è basata esclusivamente sul sentiment testuale. La discrepanza con Feedaty (95% positivo vs 55% Facebook) è spiegata dal profilo del reviewer: su Facebook scrivono prevalentemente utenti con esperienze molto forti (positive o negative), mentre su Feedaty le recensioni sono sollecitate post-acquisto, il che riduce il bias di selezione.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Analisi Reputazione Digitale · Top Farmacia · 25 Febbraio 2026 · Confidenziale · Arricchito con Market Research & Reddit Social Listening</p>
+  <img src="https://mocainteractive.com/assets/svg/logo-light.svg" alt="moca interactive" height="24">
+</footer>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+// Sticky nav active state
+window.addEventListener('scroll', function() {
+  const sections = ['executive','mercato','kpi','forza-debolezza','opportunita','raccomandazione','analisi-fonti'];
+  const links = document.querySelectorAll('nav a');
+  let current = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if(el && window.scrollY >= el.offsetTop - 80) current = id;
+  });
+  links.forEach(a => {
+    a.classList.remove('active');
+    if(a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
